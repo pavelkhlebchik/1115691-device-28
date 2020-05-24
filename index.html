@@ -8,11 +8,11 @@
 
 <body>
   <header>
-    <a>
-      <img src="img/logo-device.svg" width="163" height="35" alt="Логотип Device">
+    <a href="">
+      <img src="img/logo-device.svg" width="163" height="35" alt="Логотип интернет магазина гаджетов Device">
     </a>
-    <img src="img/search.svg" width="12" height="12" alt="Поиск">
-    <input type="text">
+    <img src="img/search.svg" width="12" height="12" alt="Поисковая строка">
+    <input type="text" placeholder="Поиск по сайту">
     <ul>
       <li>
         <a href="">
@@ -22,13 +22,13 @@
       </li>
       <li>
         <a href="">
-          <img src="img/compare.svg" width="8" height="8" alt="Сравнить">
+          <img src="img/compare.svg" width="8" height="8" alt="Шкала рейтинга">
           Сравнить
         </a>
       </li>
       <li>
         <a href="">
-          <img src="img/cart.svg" width="10" height="10" alt="Корзина">
+          <img src="img/cart.svg" width="10" height="10" alt="Корзина для покупок">
           Корзина
         </a>
       </li>
@@ -38,8 +38,10 @@
         <li>
           <a href="catalog.html">
             Каталог
-            <img src="img/plus.svg" width="15" height="15" alt="+">
           </a>
+          <button>
+            <img src="img/plus.svg" width="15" height="15" alt="Раскрыть список">
+          </button>
         </li>
         <li>
           <a href="">Доставка</a>
@@ -55,9 +57,9 @@
   </header>
 
   <main>
-    <h1>Интернет магазин гаджетов "Device"</h1>
+    <h1 class="visually-hidden">Интернет магазин гаджетов "Device"</h1>
     <section>
-      <h2>Лучшие предложения</h2>
+      <h2 class="visually-hidden">Лучшие предложения</h2>
       <article>
         <img src="img/slider-1.png" width="384" height="486" alt="Мега-крутая селфи-палка">
         <h3>Делай селфи как Бен Стиллер</h3>
@@ -112,13 +114,13 @@
         </table>
       </article>
       <div>
-        <input type="radio" checked>
-        <input type="radio">
-        <input type="radio">
+        <input type="radio" name="slider">
+        <input type="radio" name="slider">
+        <input type="radio" name="slider">
       </div>
     </section>
     <section>
-      <h2>Наш ассортимент</h2>
+      <h2 class="visually-hidden">Наш ассортимент</h2>
       <ul>
         <li>
           <a href="">
@@ -159,7 +161,7 @@
       </ul>
     </section>
     <section>
-      <h2>Наши услуги</h2>
+      <h2 class="visually-hidden">Наши услуги</h2>
       <ul>
         <li>
           <button>Доставка</button>
@@ -183,7 +185,7 @@
         <p>Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый.
           Товар, не дом, конечно же
         </p>
-        <img src="img/warranty.svg" width="171" height="195" alt="Гарантии">
+        <img src="img/warranty.svg" width="171" height="195" alt="Символ защиты">
       </article>
       <article>
         <h3>Кредит</h3>
@@ -191,22 +193,22 @@
           подберут для вас наиболее выгодные
           условия кредита. Выгодные для нашего банка, разумеется.
         </p>
-        <img src="img/credit.svg" width="156" height="188" alt="Человек с картой">
+        <img src="img/credit.svg" width="156" height="188" alt="Человек с кредитной картой">
       </article>
     </section>
     <section>
-      <h2>Наши партнеры</h2>
-      <a href="">
-        <img src="img/logo-1.png" width="260" height="100" alt="dji">
+      <h2 class="visually-hidden">Наши партнеры</h2>
+      <a href="" target="_blank">
+        <img src="img/logo-1.png" width="260" height="100" alt="Фирма dji">
       </a>
-      <a href="">
-        <img src="img/logo-2.png" width="260" height="100" alt="SPGadgets">
+      <a href="" target="_blank">
+        <img src="img/logo-2.png" width="260" height="100" alt="Компания SPGadgets">
       </a>
-      <a href="">
-        <img src="img/logo-3.png" width="260" height="100" alt="GoPro">
+      <a href="" target="_blank">
+        <img src="img/logo-3.png" width="260" height="100" alt="Камеры и аксессуары GoPro">
       </a>
-      <a href="">
-        <img src="img/logo-4.png" width="260" height="100" alt="Vive">
+      <a href="" target="_blank">
+        <img src="img/logo-4.png" width="260" height="100" alt="Фирма Vive">
       </a>
     </section>
     <section>
@@ -230,37 +232,65 @@
         Заодно, вы сможете проверить работоспособность покупки.
         Всякое бывает
       </p>
-      <a>
-        <img src="img/map.png" width="560" height="222" alt="Карта">
+      <a href="#modal_window_map">
+        <img src="img/map.png" width="560" height="222" alt="Точка на карте">
       </a>
       <a href="">Напишите нам</a>
     </section>
   </main>
-
+  <section>
+    <h2 class="visually-hidden">
+      Напишите нам:
+    </h2>
+    <form action="https://echo.htmlacademy.ru" method="post">
+      <p>
+        <label for="name-field"> Ваше имя: </label>
+        <input type="text" name="name" id="name-field" placeholder="Имя Фамилия" required>
+      </p>
+      <p>
+        <label for="email-field">Ваш e-mail:</label>
+        <input type="email" name="email" id="email-field" placeholder="email@example.ru" required>
+      </p>
+      <p>
+        <label for="comment-field">Текст письма:</label>
+        <textarea name="text" id="comment-field" placeholder="В свободной форме"></textarea>
+      </p>
+      <button type="submit">Отправить</button>
+    </form>
+    <button><img src="img/modal-close.svg" width="55" height="55" alt="Закрыть форму обратной связи"></button>
+  </section>
+  <section>
+    <h2 class="visually-hidden">
+      Схема проезда:
+    </h2>
+    <p id="modal_window_map">
+      <img src="img/map-big.png" width="994" height="523" alt="Развернутая карта с нашей геолокацией">
+    </p>
+    <button><img src="img/modal-close.svg" width="55" height="55" alt="Закрыть карту"></button>
+  </section>
   <footer>
     <ul>
       <li>
         <a href="">
           <img src="img/user.svg" width="9" height="9" alt="Пользователь">
-          Валентин Петухов
+          Войти
         </a>
-        <a href="">Выйти</a>
       </li>
       <li>
         <a href="">
-          <img src="img/compare.svg" width="8" height="8" alt="Сравнить">
+          <img src="img/compare.svg" width="8" height="8" alt="Шкала рейтинга">
           Сравнить
         </a>
       </li>
       <li>
         <a href="">
-          <img src="img/cart.svg" width="10" height="10" alt="Корзина">
+          <img src="img/cart.svg" width="10" height="10" alt="Корзина для покупок">
           Корзина
         </a>
       </li>
     </ul>
-    <a>
-      <img src="img/logo-device.svg" width="163" height="35" alt="Логотип Device">
+    <a href="">
+      <img src="img/logo-device.svg" width="163" height="35" alt="Логотип интернет магазина гаджетов Device">
     </a>
     <section>
       <p>г. Москва, ул. Строителей, 15</p>
@@ -298,7 +328,7 @@
           </a>
         </li>
       </ul>
-      <a href="https://htmlacademy.ru/">
+      <a href="https://htmlacademy.ru/" target="_blank">
         <img src="img/logo-html.svg" width="27" height="34" alt="HtmlAcademy">
       </a>
     </section>
