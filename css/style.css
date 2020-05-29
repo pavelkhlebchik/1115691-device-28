@@ -1,0 +1,235 @@
+@font-face {
+  font-family:  'Gilroy';
+  src:  url('fonts/web/gilroylight.woff2') format('woff2'),
+        url('fonts/web/gilroylight.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family:  'Gilroy';
+  src:  url('fonts/web/gilroyextrabold.woff2') format('woff2'),
+        url('fonts/web/gilroyextrabold.woff') format('woff');
+  font-weight: 800;
+  font-style: normal;
+} 
+
+@font-face {
+  font-family:  'Open sans';
+  src:  url('fonts/web/opensans.woff2') format('woff2'),
+        url('fonts/web/opensans.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family:  'Open sans';
+  src:  url('fonts/web/opensanslight.woff2') format('woff2'),
+        url('fonts/web/opensanslight.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+}
+
+/* Variables */
+:root {
+  --basic-black:  #000000;
+  --basic-dark: #363636;
+  --basic-white:  #ffffff;
+  --basic-gray: #464646;
+  --basic-half-gray:  #7e7e7e;
+  --basic-gray-light: #e5e5e5;
+  
+  --special-yellow: #f7e296;
+  --special-green:  #91c92f;
+  --special-yellow-dark:  #f0c52e;
+}
+
+/* Global */
+
+body {
+  margin: 0;
+  padding: 0;
+  min-width:  1180px;
+  color: var(--basic-black);
+  font-family: 'Open sans';
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 28px;
+}
+
+img {
+  max-width:  100%; 
+  height: auto;
+}
+
+a {
+  text-decoration:  none;
+}
+
+.visually-hidden  {
+  display: none;
+}
+/* Navigation */
+.main-header-logo {
+  width:100%;
+}
+
+/* User navigation */
+.user-navigation-list,
+.main-catalog-list {
+  color:  var(--basic-black);
+  font-family:  'Open sans';
+  font-size: 15px;
+  font-weight:  300;
+  list-style: none;
+  line-height:  20px;
+}
+
+/* Main navigation */
+.main-navigation-list {
+  color:  var(--basic-black);
+  font-family:  'Gilroy';
+  font-weight:  800;
+  font-size:  18px;
+  letter-spacing: 0.2em;
+  line-height:  22px;
+  list-style: none;
+  text-transform: uppercase;
+}
+
+
+/* active & hover link */
+.user-navigation-list a,
+.main-navigation-list a,
+.main-catalog-list a {
+  color: var(--basic-black)
+}
+
+.main-logo img:hover,
+.user-navigation-list a:hover,
+.main-navigation-list a:hover,
+.main-catalog-list a:hover,
+.footer-navigation-list a:hover,
+.copyright:hover {
+  opacity: 0.6;
+}
+.main-logo img:active,
+.user-navigation-list a:active,
+.main-navigation-list a:active,
+.main-catalog-list a:active,
+.footer-navigation-list a:active,
+.copyright:active {
+  opacity: 0.3;
+}
+
+/* Index columns */
+
+.index-columns h2 {
+  font-family: 'Gilroy';
+  font-weight: 800;
+  font-size: 47px;
+  line-height: 58px;
+  letter-spacing: 0.2em;
+}
+
+.about li {
+  font-family: 'Gilroy';
+  font-size: 16px;
+  font-weight: 800;
+  list-style-image: url('../img/bullet.svg');
+}
+
+.service-list {
+  list-style: none;
+}
+
+.popup {
+  display: none;
+}
+.footer {
+  background-color: var(--basic-dark);
+  color: var(--basic-white);
+}
+
+.footer-user-navigation-list {
+  color:  var(--basic-white);
+  font-family:  'Open sans';
+  font-size: 15px;
+  font-weight:  300;
+  list-style: none;
+  line-height:  20px;
+  
+}
+
+.footer-user-navigation-list a {
+  color: var(--basic-white);
+  opacity: 0.7;
+}
+
+.footer-user-navigation-list a:hover,
+.socials-list a:hover {
+  opacity: 1.0;
+}
+
+.footer-user-navigation-list a:active,
+ .socials-list a:active {
+  opacity: 0.3;
+}
+
+.footer-navigation-list{
+  color: var(--basic-white);
+  font-family:  'Gilroy';
+  font-weight:  800;
+  font-size:  18px;
+  letter-spacing: 0.2em;
+  line-height:  22px;
+  list-style: none;
+  text-transform: uppercase;
+}
+
+.footer-navigation-list a {
+  color: var(--basic-white);
+}
+
+.socials-list {
+  text-align: center;
+  list-style: none;
+}
+
+.socials-list a{
+  opacity: 0.7;
+}
+/* Buttons */
+
+.button {
+  border: none;
+  color: var(--basic-black);
+  font-family: Gilroy;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  background-color: inherit;
+}
+ .button:hover {
+  background-color: var(--special-yellow-dark);
+}
+.special-offers .button:hover {
+  background-color: var(--special-yellow);
+}
+
+.main-header-search .button:hover {
+  background-color: inherit;
+}
+
+.main-navigation-list .button {
+  background-color: inherit;
+  opacity: 0.7
+}
+/* Form and popup */
+.main-header-search input{
+  border: none;
+  outline: none;
+}
