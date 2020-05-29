@@ -222,6 +222,10 @@ a {
   background-color: var(--special-yellow-dark);
 }
 
+.button span:active {
+  opacity: 0.3;
+}
+
 .special-offers .button:hover {
   background-color: var(--special-yellow);
 }
@@ -242,6 +246,19 @@ a {
   background-color: inherit;
 }
 
+.main-header-search input::placeholder  {
+  opacity: 0.3;
+}
+
+
+.main-header-search input:focus::placeholder {
+  opacity: 1;
+}
+
+.main-header-search input:hover::placeholder {
+  opacity: 0.6;
+}
+
 .popup {
   display: none;
 }
@@ -257,6 +274,7 @@ a {
 }
 
 /* breadcrumbs */
+
 .breadcrumbs{
   font-weight: 300;
   font-size: 14px;
@@ -301,5 +319,10 @@ a {
   font-size: 16px;
   line-height: 18px;
   letter-spacing: 0.05em;
+}
 
+/* paginator */
+
+.paginator {
+  list-style: none;
 }
