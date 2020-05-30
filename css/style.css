@@ -230,6 +230,11 @@ a {
   background-color: var(--special-yellow);
 }
 
+.service-list .button:active {
+  background-color: var(--basic-black);
+  color: var(--special-yellow);
+}
+
 .main-header-search .button:hover {
   background-color: inherit;
 }
