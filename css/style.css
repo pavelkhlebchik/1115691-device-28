@@ -194,11 +194,11 @@ a {
  color: rgba(0, 0, 0, 0.4);
 }
 
-.catalog-list img:active {
+.catalog-list-link:active img {
   opacity: 0.3;
 }
 
-.partners a{
+.partners a {
   opacity: 0.3;
   filter: grayscale(100%);
 }
