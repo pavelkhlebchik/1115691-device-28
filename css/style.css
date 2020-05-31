@@ -42,6 +42,8 @@
   --special-yellow: #f7e296;
   --special-green:  #91c92f;
   --special-yellow-dark:  #f0c52e;
+
+  --paginator-color: #EBEBEB;
 }
 
 /* Global */
@@ -128,6 +130,83 @@ a {
   opacity: 0.3;
 }
 
+/* slider special offers */
+
+.special-offers-item h3 {
+  font-family: 'Gilroy';
+  font-weight: 800;
+  font-size: 47px;
+  line-height: 58px;
+}
+
+.special-offers-item p {
+  font-family: 'Open Sans';
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 20px;
+}
+
+.feature tr:first-child {
+  font-family: 'Gilroy';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 36px;
+  line-height: 42px;
+  letter-spacing: 0.1em;
+}
+
+.feature tr:last-child {
+  font-family: Gilroy;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 13px;
+  line-height: 15px;
+  letter-spacing: 0.1em;
+}
+
+/* content catalog */
+
+.catalog-list {
+  list-style: none;
+}
+
+.catalog-image {
+  background-color: var(--special-yellow);
+  width: 160px;
+  height: 160px;
+}
+
+.catalog-image:hover {
+  background-color: var(--special-yellow-dark);
+}
+
+.catalog-list a {
+  color: var(--basic-black);
+  font-family: 'Gilroy';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 0.05em;
+}
+
+.catalog-list a:active {
+ color: rgba(0, 0, 0, 0.4);
+}
+
+.catalog-list img:active {
+  opacity: 0.3;
+}
+
+.partners a{
+  opacity: 0.3;
+  filter: grayscale(100%);
+}
+
+.partners a:hover {
+  opacity: 1;
+  filter: none;
+}
 /* Index columns */
 
 .index-columns h2 {
@@ -148,6 +227,8 @@ a {
 .service-list {
   list-style: none;
 }
+
+/* footer */
 
 .footer {
   background-color: var(--basic-dark);
@@ -179,7 +260,7 @@ a {
   opacity: 0.3;
 }
 
-.footer-navigation-list{
+.footer-navigation-list {
   color: var(--basic-white);
   font-family:  'Gilroy';
   font-weight:  800;
@@ -199,7 +280,7 @@ a {
   list-style: none;
 }
 
-.socials-list a{
+.socials-list a {
   opacity: 0.7;
 }
 /* Buttons */
@@ -244,8 +325,8 @@ a {
   opacity: 0.7
 }
 
-/* Form and popup */
-.main-header-search input{
+/* Form  popup checkbox radio */
+.main-header-search input {
   border: none;
   outline: none;
   background-color: inherit;
@@ -280,7 +361,7 @@ a {
 
 /* breadcrumbs */
 
-.breadcrumbs{
+.breadcrumbs {
   font-weight: 300;
   font-size: 14px;
   list-style: none;
@@ -304,7 +385,11 @@ a {
 /* product-cards */
 
 .product-card-list {
-  list-style: none;
+  list-style: none
+}
+
+.product-card-list img:hover {
+  opacity: 0.7;
 }
 
 .product-card-list a {
@@ -329,5 +414,130 @@ a {
 /* paginator */
 
 .paginator {
+  background-color: var(--paginator-color);
   list-style: none;
+}
+.paginator a {
+  font-family: 'Gilroy';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--basic-black);
+}
+
+.paginator .next:hover,
+.paginator .prev:hover {
+  background-color: #D9D9D9;
+}
+
+.next a:active,
+.prev a:active {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.page-number:not(.current-page) {
+  opacity: 0.3;
+}
+
+.page-number:hover:not(.current-page) {
+  opacity: 0.6;
+}
+
+.page-number:active:not(.current-page) {
+  opacity: 1;
+}
+
+/* filter and sort */
+
+.filters h2 {
+  font-family: 'Gilroy';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.filter {
+  user-select: none;
+}
+
+.filter legend {
+  font-family: 'Gilroy';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 0.1em;
+}
+
+.filter label {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 19px;
+}
+
+.filter ul {
+  list-style: none;
+}
+
+.sorting h2 {
+  font-family: Gilroy;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.sorting ul {
+  list-style: none;
+}
+
+.sorting-list a {
+  font-family: 'Open Sans';
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 19px;
+  opacity: 0.3;
+  color: var(--basic-black);
+}
+
+.sorting-list a:hover:not(.current-sorting-item) {
+  opacity: 0.6;
+}
+
+.sorting-list a:active:not(.current-sorting-item) {
+  opacity: 1;
+}
+
+.sorting-list .current-sorting-item {
+  font-family: 'Open Sans';
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 19px;
+  opacity: 1;
+}
+
+.sorting-level-list .current-level {
+  opacity: 1;
+}
+
+.sorting-level-list a:not(.current-level) {
+  opacity: 0.4;
+}
+
+.sorting-level-list a:hover:not(.current-level) {
+  opacity: 0.2;
+}
+
+.sorting-level-list a:active:not(.current-level) {
+  opacity: 1;
 }

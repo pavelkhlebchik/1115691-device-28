@@ -113,36 +113,36 @@
         <a>Моноподы для селфи</a>
       </li>
     </ul>
-    <section class="filter-wrapper">
+    <section class="filters">
       <h2>
         Фильтр:
       </h2>
-      <form action="https://echo.htmlacademy.ru" method="post">
+      <form class="filter" action="https://echo.htmlacademy.ru" method="post">
         <fieldset>
           <legend>Стоимость</legend>
           <input type="range">
         </fieldset>
         <fieldset>
           <legend>Цвет</legend>
-          <ul>
+          <ul class="filter-input">
             <li>
-              <input type="checkbox" name="color-black" id="filter-color-black" checked>
+              <input class="filter-input-checkbox" type="checkbox" name="color-black" id="filter-color-black" checked>
               <label for="filter-color-black">Черный</label>
             </li>
             <li>
-              <input type="checkbox" name="color-white" id="filter-color-white">
+              <input class="filter-input-checkbox" type="checkbox" name="color-white" id="filter-color-white">
               <label for="filter-color-white">Белый</label>
             </li>
             <li>
-              <input type="checkbox" name="color-blue" id="filter-color-blue" checked>
+              <input class="filter-input-checkbox" type="checkbox" name="color-blue" id="filter-color-blue" checked>
               <label for="filter-color-blue">Синий</label>
             </li>
             <li>
-              <input type="checkbox" name="color-red" id="filter-color-red" checked>
+              <input class="filter-input-checkbox" type="checkbox" name="color-red" id="filter-color-red" checked>
               <label for="filter-color-red">Красный</label>
             </li>
             <li>
-              <input type="checkbox" name="color-pink" id="filter-color-pink">
+              <input class="filter-input-checkbox" type="checkbox" name="color-pink" id="filter-color-pink">
               <label for="filter-color-pink">Розовый</label>
             </li>
           </ul>
@@ -151,44 +151,44 @@
           <legend>Bluetooth</legend>
           <ul>
             <li>
-              <input type="radio" name="bluetooth-filter" value="available-bluetooth" id="available-bluetooth-filter"
+              <input class="filter-input-radio" type="radio" name="bluetooth-filter" value="available-bluetooth" id="available-bluetooth-filter"
                 checked>
               <label for="available-bluetooth-filter">Есть</label>
             </li>
             <li>
-              <input type="radio" name="bluetooth-filter" value="unavailable-bluetooth"
+              <input class="filter-input-radio" type="radio" name="bluetooth-filter" value="unavailable-bluetooth"
                 id="unavailable-bluetooth-filter">
               <label for="unavailable-bluetooth-filter">Нет</label>
             </li>
           </ul>
         </fieldset>
-        <button type="submit">Показать</button>
+        <button class="button" type="submit">Показать</button>
       </form>
     </section>
-    <section>
+    <section class="sorting">
       <h2>
         Сортировка:
       </h2>
-      <ul>
-        <li>
-          <a href="">По цене</a>
+      <ul class="sorting-list">
+        <li class="sprting-item">
+          <a class="current-sorting-item" href="">По цене</a>
         </li>
-        <li>
+        <li class="sorting-item">
           <a href="">По типу</a>
         </li>
-        <li>
+        <li class="sorting-item">
           <a href="">По популярности</a>
         </li>
       </ul>
-      <ul>
-        <li>
+      <ul class="sorting-level-list">
+        <li class="sorting-level-item">
           <a href="">
-            <img src="img/icon-up-dir.svg" width="10" height="11" alt="Cортировка вверху вниз">
+            <img src="img/icon-up-dir.svg" width="10" height="11" alt="Cортировка снизу вверх">
           </a>
         </li>
-        <li>
-          <a href="">
-            <img src="img/icon-down-dir.svg" width="10" height="11" alt="Сортировка снизу вверх">
+        <li class="sorting-level-item">
+          <a class="current-level" href="">
+            <img src="img/icon-down-dir.svg" width="10" height="11" alt="Сортировка сверху вних">
           </a>
         </li>
       </ul>
@@ -249,13 +249,13 @@
       <li class="prev">
         <a href="#prev">Назад</a>
       </li>
-      <li class="current">
+      <li class="page-number current-page">
         <a>1</a>
       </li>
-      <li>
+      <li class="page-number">
         <a href="">2</a>
       </li>
-      <li>
+      <li class="page-number">
         <a href="">3</a>
       </li>
       <li class="next">
