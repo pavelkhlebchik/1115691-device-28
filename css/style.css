@@ -872,6 +872,7 @@ main h1 {
 
 .product-card-item {
   margin: 0;
+  margin-bottom: 40px;  
   padding: 0;
   width: 361px;
 }
