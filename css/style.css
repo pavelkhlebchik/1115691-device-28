@@ -914,6 +914,7 @@ main h1 {
   list-style: none;
   margin: 0;
   margin-bottom: 78px;
+  margin-left: 72px;
   padding: 0;
   display: flex;
   max-width: 760px;
