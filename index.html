@@ -105,7 +105,7 @@
     <h1 class="visually-hidden">Интернет магазин гаджетов "Device"</h1>
     <section class="special-offers">
       <h2 class="visually-hidden">Лучшие предложения</h2>
-      <article class="special-offers-item slider-slides">
+      <article class="special-offers-item slider-slides item-1">
         <div class="silde-wrapper">
           <img src="img/slider-1.png" width="384" height="486" alt="Мега-крутая селфи-палка">
         </div>
@@ -129,7 +129,7 @@
           </table>
         </div>
       </article>
-      <!-- <article class="special-offers-item slider-slides"> 
+      <article class="special-offers-item slider-slides item-2">
         <div class="wrap">
           <img src="img/slider-2.png" width="345" height="485" alt="Фитнес браслет">
         </div>
@@ -149,7 +149,7 @@
           </table>
         </div>
       </article>
-      <article class="special-offers-item slider-slides">
+      <article class="special-offers-item slider-slides item-3">
         <img src="img/slider-3.png" width="526" height="334" alt="Квадрокоптер">
         <div class="wrap">
           <h3>Порхает как бабочка, жалит как пчела!</h3>
@@ -168,7 +168,7 @@
             </tr>
           </table>
         </div>
-        </article> -->
+      </article>
       <input type="radio" class="custom-radio" id="btn-1" name="toggle">
       <input type="radio" class="custom-radio" id="btn-2" name="toggle">
       <input type="radio" class="custom-radio" id="btn-3" name="toggle">
@@ -186,7 +186,7 @@
             <div class="catalog-image">
               <img src="img/popular-1.svg" width="97" height="55" alt="Виртуальная реальность">
             </div>
-            <h3>Виртуальная реальность</h3>
+            <h3 class="catalog-list-name">Виртуальная реальность</h3>
           </a>
         </li>
         <li class="catalog-item">
@@ -244,26 +244,32 @@
           <button class="button">Кредит</button>
         </li>
       </ul>
-      <article>
-        <h3>Доставка</h3>
-        <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно!
-          Ведь мы неплохо заработаем, поднимая его на ваш этаж
-        </p>
-        <img src="img/delivery.svg" width="136" height="164" alt="Бегущий человек">
+      <article class="service-description delivery">
+        <div class="service-description-wrapper">
+          <h3>Доставка</h3>
+          <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно!
+            Ведь мы неплохо заработаем, поднимая его на ваш этаж
+          </p>
+        </div>
+        <div class="service-image">
+          <img src="img/delivery.svg" width="136" height="164" alt="Бегущий человек">
+        </div>
       </article>
-      <article>
+      <article class="service-description warranty">
         <h3>Гарантии</h3>
         <p>Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый.
           Товар, не дом, конечно же
         </p>
         <img src="img/warranty.svg" width="171" height="195" alt="Символ защиты">
       </article>
-      <article>
-        <h3>Кредит</h3>
-        <p>Залезть в долговую яму стало проще! Кредитные консультанты
-          подберут для вас наиболее выгодные
-          условия кредита. Выгодные для нашего банка, разумеется.
-        </p>
+      <article class="service-description credit">
+        <div class="service-description-wrapper">
+          <h3>Кредит</h3>
+          <p>Залезть в долговую яму стало проще! Кредитные консультанты
+            подберут для вас наиболее выгодные
+            условия кредита. Выгодные для нашего банка, разумеется.
+          </p>
+        </div>
         <img src="img/credit.svg" width="156" height="188" alt="Человек с кредитной картой">
       </article>
     </section>

@@ -238,13 +238,16 @@ a:not(.active) {
   opacity: 0.3;
 }
 
-/* slider special offers */
+/* slider for special offers */
 .special-offers {
   margin-bottom: 76px;
 }
 
 .special-offers-item{
-  margin-top: -120px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-top: -125px;
+  justify-items: center;
 }
 
 .special-offers-item h3 {
@@ -252,7 +255,9 @@ a:not(.active) {
   font-weight: 800;
   font-size: 47px;
   line-height: 58px;
-  margin-top: 85px;
+  margin: 0;
+  margin-top: 90px;
+  margin-bottom: 30px;
 }
 
 .special-offers-item p {
@@ -260,15 +265,36 @@ a:not(.active) {
   font-weight: 300;
   font-size: 15px;
   line-height: 20px;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 60px;
 }
 
-.feature tr:first-child {
+.special-offers .button {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 60px
+}
+
+.item-2,
+.item-3 {
+  display: none;
+}
+
+
+.feature td {
+  padding-right: 60px;
+  padding-top: 15px;
+}
+
+.feature tr:first-child td{
   font-family: 'Gilroy';
   font-style: normal;
   font-weight: 300;
   font-size: 36px;
   line-height: 42px;
   letter-spacing: 0.1em;
+  padding-top: 0px;
 }
 
 .feature tr:last-child {
@@ -287,17 +313,22 @@ a:not(.active) {
 
 .catalog-list {
   display: flex;
+  justify-content: space-between;
   margin: 0;
   padding: 0;
   list-style: none;
 }
 
 .catalog-item {
+  max-width: 160px;
   margin: 0;
   padding: 0;
 }
 
 .catalog-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: var(--special-yellow);
   width: 160px;
   height: 160px;
@@ -327,10 +358,66 @@ a:not(.active) {
 
 /* services */
 
+.service-container {
+  display: flex;
+  margin-bottom: 90px;
+}
+
+.service-description {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.service-description-wrapper {
+  max-width: 495px;
+}
+
+.service-description h3 {
+  font-family: 'Gilroy';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 47px;
+  line-height: 58px;
+  letter-spacing: 0.2em;  
+}
+
+.service-description p {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 28px;
+  letter-spacing: 0.1em;
+}
+
 .service-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-width: 277px;
   margin: 0;
+  margin-right: 116px;
   padding: 0;
   list-style: none;
+  font-family: Gilroy;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+}
+
+.service-item {
+  margin: 0;
+  padding: 0;
+}
+
+.warranty,
+.credit {
+  display: none;
 }
 
 /* partners */
@@ -338,7 +425,8 @@ a:not(.active) {
 .partners {
   display: flex;
   width: 100%;
-  justify-content: space-between; 
+  justify-content: space-between;
+  margin-bottom: 90px; 
 } 
 
 .partners a {
@@ -356,6 +444,15 @@ a:not(.active) {
   display: flex;
   justify-content: space-between;
   margin-bottom: 86px;
+}
+
+.index-columns h2::before {
+  content: " ";
+  display: flex;
+  width: 80px;
+  height: 7px;
+  margin-bottom:  50px;
+  background-color: var(--basic-black);
 }
 
 .index-columns h2 {
@@ -704,13 +801,13 @@ main h1 {
   display: grid;
   width: 100%;
   grid-template-columns: 448px 1fr;
-  column-gap: 72px;
   align-content: start;
 }
 
 .sorting {
-  width: 100%;
+  width: auto;
   height: 70px;
+  padding-left: 72px;
   margin-bottom: 70px;
   display: flex;
   align-items: center;
@@ -757,6 +854,8 @@ main h1 {
 
 .filters h2 {
   margin: 0;
+  height: 70px;
+  background-color: #dcdcdc;
 }
 
 /* product-cards */
@@ -764,6 +863,7 @@ main h1 {
 .product-card-list {
   list-style: none;
   margin: 0;
+  margin-left: 72px;
   margin-bottom: 40px;
   padding: 0;
   display: flex;
