@@ -48,7 +48,6 @@
               Каталог товаров
             </a>
             <button class="button">
-              <!-- <img src="img/plus.svg" width="15" height="15" alt="Раскрыть список"> -->
             </button>
           </li>
           <li class="main-navigation-item">
@@ -325,17 +324,18 @@
       </p>
       <p class="write-us-item">
         <label for="email-field">Ваш e-mail:</label>
-        <input type="email" name="email" id="email-field" placeholder="email@example.ru" required>
+        <input class="invalid-value" type="email" name="email" id="email-field" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" placeholder="email@example.ru" required>
       </p>
       <p class="write-us-item">
         <label for="comment-field">Текст письма:</label>
         <textarea name="text" id="comment-field" placeholder="В свободной форме"></textarea>
       </p>
-      <button class="button" type="submit">Отправить</button>
+      <button class="button button-form" type="submit">Отправить</button>
     </form>
-    <button class="close-modal-btn"><img src="img/modal-close.svg" width="55" height="55" alt="Закрыть форму обратной связи"></button>
+    <button class="close-modal-btn"><img src="img/modal-close.svg" width="55" height="55"
+        alt="Закрыть форму обратной связи"></button>
   </section>
-  <section class="popup">
+  <section class="map-popup">
     <h2 class="visually-hidden">
       Схема проезда:
     </h2>
