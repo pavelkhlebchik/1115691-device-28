@@ -160,10 +160,6 @@ a:not(.active) {
   padding: 0;
 }
 
-.user-navigation-list img {
-  padding-right: 12px;
-}
-
 .user-navigation-login {
   width: 50%;
   flex-grow: 1;
@@ -228,6 +224,7 @@ a:not(.active) {
   position: absolute;
   left: 0px;
   top: 5px;
+  padding-right: 22px;
 }
 
 /* Main navigation */
