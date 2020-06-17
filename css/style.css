@@ -761,9 +761,8 @@ a:not(.active) {
   background-color: inherit;
 }
 
-.main-navigation-list .button {
-  background-color: inherit;
-  opacity: 0.7
+.main-navigation-list .button:hover {
+  background-color: transparent;
 }
 
 .main-navigation-list .button {
@@ -776,6 +775,8 @@ a:not(.active) {
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
+  background-color: inherit;
+  opacity: 0.7
 }
 
 .main-navigation-item .button::before {
