@@ -1110,11 +1110,6 @@ main h1 {
   width: 100%;
 }
 
-.filters h2 {
-  margin: 0;
-  height: 70px;
-  background-color: #dcdcdc;
-}
 
 /* product-cards */
 
@@ -1249,9 +1244,12 @@ main h1 {
   line-height: 20px;
   letter-spacing: 0.1em;
   text-transform: uppercase;
+  margin: 0;
+  height: 70px;
+  background-color: #dcdcdc;
 }
 
-.filter {
+filter {
   user-select: none;
 }
 
