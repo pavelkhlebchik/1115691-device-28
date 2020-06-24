@@ -116,8 +116,9 @@
         </li>
       </ul>
     </div>
-    <div class="catalog-page">
-      <section class="filters">
+    <section class="catalog-header">
+      <h2 class="visually-hidden">Фильтр и сортировка</h2>
+      <div class="container catalog-header-inner">
         <h2>
           Фильтр:
         </h2>
@@ -136,69 +137,69 @@
               <a href="">По популярности</a>
             </li>
           </ul>
-          <ul class="sorting-level-list">
+          <ul class="sorting-level-list level-up">
             <li class="sorting-level-item">
               <a href="">
                 <img src="img/icon-up-dir.svg" width="10" height="11" alt="Cортировка снизу вверх">
               </a>
             </li>
-            <li class="sorting-level-item">
+            <li class="sorting-level-item level-down">
               <a class="current-level" href="">
                 <img src="img/icon-down-dir.svg" width="10" height="11" alt="Сортировка сверху вних">
               </a>
             </li>
           </ul>
         </section>
-      </section>
-      <div class="form">
-        <form class="filter" action="https://echo.htmlacademy.ru" method="post">
-          <fieldset>
-            <legend>Стоимость</legend>
-            <input type="range">
-          </fieldset>
-          <fieldset>
-            <legend>Цвет</legend>
-            <ul class="filter-input">
-              <li>
-                <input class="filter-input-checkbox" type="checkbox" name="color-black" id="filter-color-black" checked>
-                <label for="filter-color-black">Черный</label>
-              </li>
-              <li>
-                <input class="filter-input-checkbox" type="checkbox" name="color-white" id="filter-color-white">
-                <label for="filter-color-white">Белый</label>
-              </li>
-              <li>
-                <input class="filter-input-checkbox" type="checkbox" name="color-blue" id="filter-color-blue" checked>
-                <label for="filter-color-blue">Синий</label>
-              </li>
-              <li>
-                <input class="filter-input-checkbox" type="checkbox" name="color-red" id="filter-color-red" checked>
-                <label for="filter-color-red">Красный</label>
-              </li>
-              <li>
-                <input class="filter-input-checkbox" type="checkbox" name="color-pink" id="filter-color-pink">
-                <label for="filter-color-pink">Розовый</label>
-              </li>
-            </ul>
-          </fieldset>
-          <fieldset>
-            <legend>Bluetooth</legend>
-            <ul>
-              <li>
-                <input class="filter-input-radio" type="radio" name="bluetooth-filter" value="available-bluetooth"
-                  id="available-bluetooth-filter" checked>
-                <label for="available-bluetooth-filter">Есть</label>
-              </li>
-              <li>
-                <input class="filter-input-radio" type="radio" name="bluetooth-filter" value="unavailable-bluetooth"
-                  id="unavailable-bluetooth-filter">
-                <label for="unavailable-bluetooth-filter">Нет</label>
-              </li>
-            </ul>
-          </fieldset>
-          <button class="button" type="submit">Показать</button>
-        </form>
       </div>
+    </section>
+    <div class="catalog-wrapper catalog-content">
+      <form class="filter" action="https://echo.htmlacademy.ru" method="post">
+        <fieldset>
+          <legend>Стоимость</legend>
+          <input type="range">
+        </fieldset>
+        <fieldset>
+          <legend>Цвет</legend>
+          <ul class="filter-input">
+            <li>
+              <input class="filter-input-checkbox" type="checkbox" name="color-black" id="filter-color-black" checked>
+              <label for="filter-color-black">Черный</label>
+            </li>
+            <li>
+              <input class="filter-input-checkbox" type="checkbox" name="color-white" id="filter-color-white">
+              <label for="filter-color-white">Белый</label>
+            </li>
+            <li>
+              <input class="filter-input-checkbox" type="checkbox" name="color-blue" id="filter-color-blue" checked>
+              <label for="filter-color-blue">Синий</label>
+            </li>
+            <li>
+              <input class="filter-input-checkbox" type="checkbox" name="color-red" id="filter-color-red" checked>
+              <label for="filter-color-red">Красный</label>
+            </li>
+            <li>
+              <input class="filter-input-checkbox" type="checkbox" name="color-pink" id="filter-color-pink">
+              <label for="filter-color-pink">Розовый</label>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset>
+          <legend>Bluetooth</legend>
+          <ul>
+            <li>
+              <input class="filter-input-radio" type="radio" name="bluetooth-filter" value="available-bluetooth"
+                id="available-bluetooth-filter" checked>
+              <label for="available-bluetooth-filter">Есть</label>
+            </li>
+            <li>
+              <input class="filter-input-radio" type="radio" name="bluetooth-filter" value="unavailable-bluetooth"
+                id="unavailable-bluetooth-filter">
+              <label for="unavailable-bluetooth-filter">Нет</label>
+            </li>
+          </ul>
+        </fieldset>
+        <button class="button" type="submit">Показать</button>
+      </form>
       <div class="wrapper">
         <section class="product-cards">
           <h2 class="visually-hidden">Список моноподов для селфи</h2>
