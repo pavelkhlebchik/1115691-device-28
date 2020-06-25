@@ -42,55 +42,59 @@
           </li>
         </ul>
       </div>
-      <nav class="navigation navigation-inner">
+      <nav class="navigation">
         <ul class="main-navigation-list">
           <li class="main-navigation-item">
-            <a>
+            <a class="dropdown-hover" href="catalog.html">
               Каталог товаров
             </a>
-            <button class="button">
-            </button>
+              <div class="dropdown-menu">
+                <ul class="main-catalog-list column-1">
+                  <li class="main-catalog-item">
+                    <a href="">
+                      Виртуальная реальность
+                    </a>
+                  </li>
+                  <li class="main-catalog-item">
+                    <a href="">
+                      Моноподы для селфи
+                    </a>
+                  </li>
+                  <li class="main-catalog-item">
+                    <a href="">
+                      Экшн-камеры
+                    </a>
+                  </li>
+                </ul>
+                <ul class="main-catalog-list column-2">
+                  <li class="main-catalog-item">
+                    <a href="">
+                      Фитнес-браслеты
+                    </a>
+                  </li>
+                  <li class="main-catalog-item">
+                    <a href="">
+                      Умные часы
+                    </a>
+                  </li>
+                </ul>
+                <ul class="main-catalog-list column-3">
+                  <li class="main-catalog-item">
+                    <a href="">
+                      Квадрокоптеры
+                    </a>
+                  </li>
+                </ul>
+            </div>
           </li>
           <li class="main-navigation-item">
             <a href="">Доставка</a>
           </li>
           <li class="main-navigation-item">
-            <a href="">Гарантии</a>
+            <a href="">Гарантия</a>
           </li>
           <li class="main-navigation-item">
             <a href="">Контакты</a>
-          </li>
-        </ul>
-        <ul class="main-catalog-list">
-          <li class="main-catalog-item">
-            <a href="">
-              Виртуальная реальность
-            </a>
-          </li>
-          <li class="main-catalog-item">
-            <a href="">
-              Моноподы для селфи
-            </a>
-          </li>
-          <li class="main-catalog-item">
-            <a href="">
-              Экшн-камеры
-            </a>
-          </li>
-          <li class="main-catalog-item">
-            <a href="">
-              Фитнес-браслеты
-            </a>
-          </li>
-          <li class="main-catalog-item">
-            <a href="">
-              Умные часы
-            </a>
-          </li>
-          <li class="main-catalog-item">
-            <a href="">
-              Квадрокоптеры
-            </a>
           </li>
         </ul>
       </nav>
@@ -206,51 +210,75 @@
             <h2 class="visually-hidden">Список моноподов для селфи</h2>
             <ul class="product-card-list">
               <li class="product-card-item">
-                <a href="">
-                  <p>
-                    <img src="img/item-1.jpg" width="360" height="380"
-                      alt="Телескопическая селфи-палка со стандартным крепежом">
+                <div class="image-card-wrapper">
+                  <img src="img/item-1.jpg" width="360" height="380"
+                    alt="Телескопическая селфи-палка со стандартным крепежом">
+                  <div class="hover-links-wrapper">
+                    <button class="button add-cart"><span>В корзину</span></button>
+                    <button class="add-compare-button">Добавить к сравнению</button>
+                  </div>
+                </div>
+                <div class="card-name-wrapper">
+                  <h3>
+                    <a href="">Любительская селфи-палка</a>
+                  </h3>
+                  <p class="price">
+                    500 руб.
                   </p>
-                  <h3>Любительская селфи-палка</h3>
-                </a>
-                <p class="price">
-                  500 руб.
-                </p>
+                </div>
               </li>
               <li class="product-card-item">
-                <a href="">
-                  <p>
-                    <img src="img/item-2.jpg" width="360" height="380"
-                      alt="Телескопическая селфи-палка с усиленным крепежом и стабилизатором">
+                <div class="image-card-wrapper">
+                  <img src="img/item-2.jpg" width="360" height="380"
+                    alt="Телескопическая селфи-палка с усиленным крепежом и стабилизатором">
+                  <div class="hover-links-wrapper">
+                    <button class="button"><span>В корзину</span></button>
+                    <button class="add-compare-button">Добавить к сравнению</button>
+                  </div>
+                </div>
+                <div class="card-name-wrapper">
+                  <h3>
+                    <a href="">Профессиональная селфи-палка</a>
+                  </h3>
+                  <p class="price">
+                    1 500 руб.
                   </p>
-                  <h3>Профессиональная селфи-палка</h3>
-                </a>
-                <p class="price">
-                  1 500 руб.
-                </p>
+                </div>
               </li>
               <li class="product-card-item">
-                <a href="">
-                  <p>
-                    <img src="img/item-3.jpg" width="360" height="380"
-                      alt="Селфи-палка в специальном водоизоляционном корпусе">
+                <div class="image-card-wrapper">
+                  <img src="img/item-3.jpg" width="360" height="380"
+                    alt="Селфи-палка в специальном водоизоляционном корпусе">
+                  <div class="hover-links-wrapper">
+                    <button class="button">В корзину</button>
+                    <button class="add-compare-button">Добавить к сравнению</button>
+                  </div>
+                </div>
+                <div class="card-name-wrapper">
+                  <h3>
+                    <a href="">Непотопляемая селфи-палка</a>
+                  </h3>
+                  <p class="price">
+                    2 500 руб.
                   </p>
-                  <h3>Непотопляемая селфи-палка</h3>
-                </a>
-                <p class="price">
-                  2 500 руб.
-                </p>
+                </div>
               </li>
               <li class="product-card-item">
-                <a href="">
-                  <p>
-                    <img src="img/item-4.jpg" width="360" height="380" alt="Селфи-палка в виде руки">
+                <div class="image-card-wrapper">
+                  <img src="img/item-4.jpg" width="360" height="380" alt="Селфи-палка в виде руки">
+                  <div class="hover-links-wrapper">
+                    <button class="button"><span>В корзину</span></button>
+                    <button class="add-compare-button">Добавить к сравнению</button>
+                  </div>
+                </div>
+                <div class="card-name-wrapper">
+                  <h3>
+                    <a href="">Селфи-палка "Следуй за мной"</a>
+                  </h3>
+                  <p class="price">
+                    4 900 руб.
                   </p>
-                  <h3>Селфи-палка "Следуй за мной"</h3>
-                </a>
-                <p class="price">
-                  4 900 руб.
-                </p>
+                </div>
               </li>
             </ul>
           </section>
