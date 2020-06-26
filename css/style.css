@@ -136,16 +136,20 @@ a:not(.active) {
 }
 
 .main-header-search {
-  min-width: 540px;
+  min-width: 440px;
+  margin-right: 100px;
+  position: relative;
 }
 
-.main-header-search input::placeholder {
+.search-input:focus {
+  color: #000;
+  border-bottom-color: #000;
+  outline: 0;
+}
+
+.search-input::placeholder {
   font-size: 15px;
   line-height: 20px;
-}
-
-.main-header-search img {
-  padding-right: 18px;
 }
 
 .user-navigation-list {
@@ -778,18 +782,44 @@ a:not(.active) {
   z-index: -1;  
 }
 
-.main-header-search .button{
+.search-button {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 20px;
+  text-transform: uppercase;
+  border: 2px solid var(--basic-black);
+  padding: 15px 17px;
+  background-color: transparent;
+  visibility: hidden;
+  margin-left: -4px;
+}
+
+.main-header-search::before {
+  content: " ";
   background-image: url("../img/search.svg");
   background-repeat: no-repeat;
   background-size: contain;
-  margin-right: 18px;
+  background-color: transparent;
   vertical-align: middle;
   width: 12px;
   height: 12px;
+  display: inline-block;
+  z-index: 1;
+  position: absolute;
+  top: 22px;
 }
 
-.main-header-search .button:hover {
-  background-color: inherit;
+.search-button:hover {
+  background-color: var(--basic-black);
+  color: rgba(255, 255, 255);
+  visibility: visible;
+}
+
+.search-button span:active {
+  opacity: 0.3;
+  visibility: visible;
 }
 
 .main-navigation-list .button:hover {
@@ -806,7 +836,7 @@ a:not(.active) {
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
-  background-color: inherit;
+  background-color: transparent;
   opacity: 0.7
 }
 
@@ -849,22 +879,36 @@ a:not(.active) {
 }
 
 /* Form  popup checkbox radio */
-.main-header-search input {
-  border: none;
-  outline: none;
+.search-input {
   background-color: inherit;
+  position: relative;
+  width: 310px;
+  margin: 0;
+  padding:0;
+  padding-top: 8px;
+  padding-right: 0px;
+  padding-bottom: 10px;
+  padding-left: 42px;
+  line-height: 30px;
+  background-color: transparent;
+  border: none;
+  border-bottom: 2px solid transparent;
 }
 
-.main-header-search input::placeholder  {
+.search-input:focus + .search-button {
+  visibility: visible;
+}
+
+.search-input::placeholder  {
   opacity: 0.3;
 }
 
 
-.main-header-search input:focus::placeholder {
+.search-input:focus::placeholder {
   opacity: 1;
 }
 
-.main-header-search input:hover::placeholder {
+.search-input:hover::placeholder {
   opacity: 0.6;
 }
 
