@@ -119,6 +119,11 @@ a:not(.active) {
   margin-bottom: 164px;
 }
 
+.navigation-catalog {
+  width: 100%;
+  margin-bottom: 50px;
+}
+
 .container {
   width: 1160px;
   margin: 0 auto;  
@@ -237,7 +242,6 @@ a:not(.active) {
   font-family:  'Gilroy';
   font-weight:  800;
   font-size:  18px;
-  letter-spacing: 0.2em;
   line-height:  22px;
   list-style: none;
   text-transform: uppercase;
@@ -253,6 +257,7 @@ a:not(.active) {
 
 .main-navigation-item:not(:first-child){
   margin-right: 35px;
+  letter-spacing: 0.2em;
 }
 
 .main-navigation-item:last-child {
@@ -267,15 +272,22 @@ a:not(.active) {
 .dropdown-menu {
   position: absolute;
   min-height: 132px;
-  min-width: 100%;
+  min-width: 1100px;
   z-index: 10;
   margin: 0;
   padding: 0;
   padding-top: 30px;
+  padding-left: 60px;
+  left: -60px;
   display: none;
-  justify-content: space-between;
   background-color: var(--special-yellow);
   text-transform: initial;
+}
+
+.dropdown-menu .column-1,
+.dropdown-menu .column-2,
+.dropdown-menu .column-3 {
+  margin-right: 61px;
 }
 
 .main-navigation-item:first-child::before {
@@ -297,7 +309,7 @@ a:not(.active) {
   list-style: none;
   margin: 0;
   padding: 0;
-  letter-spacing: 0.05em;
+  letter-spacing: 0em;
 }
 
 .main-catalog-list li {
@@ -1139,7 +1151,7 @@ main h1 {
 /* filter and sort header*/
 
 .catalog-header {
-  background-image: linear-gradient(to right,#dcdcdc 34%,#e5e5e5 34%);
+  background-image: linear-gradient(to right,#dcdcdc 37%,#e5e5e5 34%);
   height: 70px;
   display: flex;
   align-items: center;
@@ -1250,20 +1262,21 @@ main h1 {
 
 .catalog-wrapper {
   padding-top: 60px;
-  background-image: linear-gradient(to right, var(--basic-gray-light) 34%, transparent 34%);
+  background-image: linear-gradient(to right, var(--basic-gray-light) 37%, transparent 34%);
   z-index: 0;
 }
 
 .catalog-content {
   display: grid;
-  grid-template-columns: 280px 1fr;
-  column-gap: 72px;
+  grid-template-columns: 200px 1fr;
+  column-gap: 200px;
 }
 
 /* filter */
 
 .filter {
   z-index: 1;
+  margin-left: 45px;
 }
 
 .filter legend {
@@ -1332,12 +1345,12 @@ main h1 {
   width: 361px;
 }
 
-.image-card-wrapper {
-  position: relative;
+.product-card-item:hover img{
+  opacity: 0.7;
 }
 
-.image-card-wrapper img:hover{
-  opacity: 0.7;
+.image-card-wrapper {
+  position: relative;
 }
 
 .hover-links-wrapper {
