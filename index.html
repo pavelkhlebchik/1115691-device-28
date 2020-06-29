@@ -101,9 +101,9 @@
     </div>
   </header>
 
-  <main class="container">
+  <main>
     <h1 class="visually-hidden">Интернет магазин гаджетов "Device"</h1>
-    <section class="special-offers">
+    <section class="special-offers container">
       <h2 class="visually-hidden">Лучшие предложения</h2>
       <article class="special-offers-item slider-slides item-1">
         <div class="silde-wrapper">
@@ -114,7 +114,7 @@
           <p>Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!)
             метров длиной и весом всего 5 килограмм.
           </p>
-          <a class="button" href=""><span>Подробнее</span></a>
+          <a class="button" href=""><span class="btn-text">Подробнее</span></a>
           <table class="feature">
             <tr>
               <td>8,5 м</td>
@@ -138,7 +138,7 @@
           <p>Мотивирующие фитнес-браслеты помогут найти в себе силы
             не пропускать занятия и соблюдать диету.
           </p>
-          <a class="button" href=""><span>Подробнее</span></a>
+          <a class="button" href=""><span class="btn-text">Подробнее</span></a>
           <table class="feature">
             <tr>
               <td>48 часов</td>
@@ -156,7 +156,7 @@
           <p>Этот обычный, на первый взгляд, квадрокоптер оснащен
             мощным лазером, замаскированным под стандартную камеру.
           </p>
-          <a class="button" href=""><span>Подробнее</span></a>
+          <a class="button" href=""><span class="btn-text">Подробнее</span></a>
           <table class="feature">
             <tr>
               <td>800 м</td>
@@ -178,7 +178,7 @@
         <label for="btn-3"></label>
       </div>
     </section>
-    <section class="catalog-list-container">
+    <section class="catalog-list-container container">
       <h2 class="visually-hidden">Наш ассортимент</h2>
       <ul class="catalog-list">
         <li class="catalog-item ">
@@ -233,47 +233,55 @@
     </section>
     <section class="service-container">
       <h2 class="visually-hidden">Наши услуги</h2>
-      <ul class="service-list">
-        <li class="service-item">
-          <button class="button">Доставка</button>
-        </li>
-        <li class="service-item">
-          <button class="button">Гарантии</button>
-        </li>
-        <li class="service-item">
-          <button class="button">Кредит</button>
-        </li>
-      </ul>
-      <article class="service-description delivery">
-        <div class="service-description-wrapper">
-          <h3>Доставка</h3>
-          <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно!
-            Ведь мы неплохо заработаем, поднимая его на ваш этаж
-          </p>
-        </div>
-        <div class="service-image">
-          <img src="img/delivery.svg" width="136" height="164" alt="Бегущий человек">
-        </div>
-      </article>
-      <article class="service-description warranty">
-        <h3>Гарантии</h3>
-        <p>Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый.
-          Товар, не дом, конечно же
-        </p>
-        <img src="img/warranty.svg" width="171" height="195" alt="Символ защиты">
-      </article>
-      <article class="service-description credit">
-        <div class="service-description-wrapper">
-          <h3>Кредит</h3>
-          <p>Залезть в долговую яму стало проще! Кредитные консультанты
-            подберут для вас наиболее выгодные
-            условия кредита. Выгодные для нашего банка, разумеется.
-          </p>
-        </div>
-        <img src="img/credit.svg" width="156" height="188" alt="Человек с кредитной картой">
-      </article>
+      <div class="container service-content">
+        <ul class="service-list">
+          <li class="current-service-item">
+            <button class="current-service-button"><span>Доставка</span></button>
+          </li>
+          <li class="service-item">
+            <button class="button"><span>Гарантия</span></button>
+          </li>
+          <li class="service-item">
+            <button class="button"><span>Кредит</span></button>
+          </li>
+        </ul>
+        <article class="service-description delivery">
+          <div class="service-description-wrapper">
+            <h3>Доставка</h3>
+            <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно!
+              Ведь мы неплохо заработаем, поднимая его на ваш этаж
+            </p>
+          </div>
+          <div class="service-image-wrapper">
+            <img src="img/delivery.svg" width="136" height="164" alt="Бегущий человек">
+          </div>
+        </article>
+        <article class="service-description warranty">
+          <div class="service-description-wrapper">
+            <h3>Гарантии</h3>
+            <p>Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый.
+              Товар, не дом, конечно же
+            </p>
+          </div>
+          <div class="service-image-wrapper">
+            <img src="img/warranty.svg" width="171" height="195" alt="Символ защиты">
+          </div>
+        </article>
+        <article class="service-description credit">
+          <div class="service-description-wrapper">
+            <h3>Кредит</h3>
+            <p>Залезть в долговую яму стало проще! Кредитные консультанты
+              подберут для вас наиболее выгодные
+              условия кредита. Выгодные для нашего банка, разумеется.
+            </p>
+          </div>
+          <div class="service-image-wrapper">
+            <img src="img/credit.svg" width="156" height="188" alt="Человек с кредитной картой">
+          </div>
+        </article>
+      </div>
     </section>
-    <section class="partners">
+    <section class="partners container">
       <h2 class="visually-hidden">Наши партнеры</h2>
       <a href="" target="_blank">
         <img src="img/logo-1.png" width="260" height="100" alt="Фирма dji">
@@ -288,7 +296,7 @@
         <img src="img/logo-4.png" width="260" height="100" alt="Фирма Vive">
       </a>
     </section>
-    <div class="index-columns">
+    <div class="index-columns container">
       <section class="about">
         <h2>О нас</h2>
         <p>Огромный выбор гаджетов не оставит равнодушным гика,
@@ -302,7 +310,7 @@
           <li>Автотрейдинг</li>
           <li>ЖелДорЭкспедиция</li>
         </ul>
-        <a class="button" href=""><span>Подробнее о нас</span></a>
+        <a class="button" href=""><span class="btn-text">Подробнее о нас</span></a>
       </section>
       <section class="contact">
         <h2>Контакты</h2>
@@ -313,7 +321,7 @@
         <a href="#modal_window_map">
           <img src="img/map.png" width="560" height="222" alt="Точка на карте">
         </a>
-        <a class="button" href=""><span>Напишите нам</span></a>
+        <a class="button" href=""><span class="btn-text">Напишите нам</span></a>
       </section>
     </div>
   </main>
@@ -356,20 +364,17 @@
       <div class="footer-user-navigation-wrapper">
         <ul class="footer-user-navigation-list">
           <li class="footer-user-navigation-item">
-            <a href="">
-              <img src="img/user-special.svg" width="9" height="9" alt="Пользователь">
+            <a class="footer-login" href="">
               Войти
             </a>
           </li>
           <li class="footer-user-navigation-item">
-            <a href="">
-              <img src="img/compare-special.svg" width="8" height="8" alt="Шкала рейтинга">
+            <a class="footer-compare" href="">
               Сравнить
             </a>
           </li>
           <li class="footer-user-navigation-item">
-            <a href="">
-              <img src="img/cart-special.svg" width="10" height="10" alt="Корзина для покупок">
+            <a class="footer-cart" href="">
               Корзина
             </a>
           </li>

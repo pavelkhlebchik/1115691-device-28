@@ -26,7 +26,7 @@
         </form>
         <ul class="user-navigation-list">
           <li class="user-navigation-item user-navigation-login">
-            <a href="">
+            <a class="user" href="">
               <span>Валентин Петухов</span>
             </a>
             <a class="user-navigation-logout" href=""><span>Выйти</span></a>
@@ -168,43 +168,50 @@
             <legend>Цвет</legend>
             <ul class="filter-input">
               <li>
+                <label class="label-check" for="filter-color-black">
                 <input class="filter-input-checkbox" type="checkbox" name="color-black" id="filter-color-black" checked>
-                <label for="filter-color-black">Черный</label>
+                <span>Черный</span></label>
               </li>
               <li>
+                <label class="label-check" for="filter-color-white">
                 <input class="filter-input-checkbox" type="checkbox" name="color-white" id="filter-color-white">
-                <label for="filter-color-white">Белый</label>
+                <span>Белый</span></label>
               </li>
               <li>
+                <label class="label-check" for="filter-color-blue">
                 <input class="filter-input-checkbox" type="checkbox" name="color-blue" id="filter-color-blue" checked>
-                <label for="filter-color-blue">Синий</label>
+                <span>Синий</span></label>
               </li>
               <li>
-                <input class="filter-input-checkbox" type="checkbox" name="color-red" id="filter-color-red" checked>
-                <label for="filter-color-red">Красный</label>
+                <label class="label-check" for="filter-color-red">
+                <input class="filter-input-checkbox" type="checkbox" name="color-red" id="filter-color-red" checked disabled>
+                <span>Красный</span></label>
               </li>
               <li>
-                <input class="filter-input-checkbox" type="checkbox" name="color-pink" id="filter-color-pink">
-                <label for="filter-color-pink">Розовый</label>
+                <label class="label-check" for="filter-color-pink">
+                <input class="filter-input-checkbox" type="checkbox" name="color-pink" id="filter-color-pink" disabled>
+                <span>Розовый</span></label>
               </li>
             </ul>
           </fieldset>
           <fieldset>
             <legend>Bluetooth</legend>
-            <ul>
+            <ul class="filter-input">
               <li>
+                <label class="label-check" for="available-bluetooth-filter">
                 <input class="filter-input-radio" type="radio" name="bluetooth-filter" value="available-bluetooth"
                   id="available-bluetooth-filter" checked>
-                <label for="available-bluetooth-filter">Есть</label>
+                <span>Есть</span></label>
               </li>
               <li>
+                <label class="label-check" for="unavailable-bluetooth-filter">
                 <input class="filter-input-radio" type="radio" name="bluetooth-filter" value="unavailable-bluetooth"
-                  id="unavailable-bluetooth-filter">
-                <label for="unavailable-bluetooth-filter">Нет</label>
+                  id="unavailable-bluetooth-filter" disabled>
+                <span>Нет</span></label>
               </li>
             </ul>
           </fieldset>
-          <button class="button" type="submit">Показать</button>
+          <button class="button" type="submit"><span class="btn-text">Показать</span></button>
         </form>
         <div class="product-cards-wrapper">
           <section class="product-cards">
@@ -215,13 +222,13 @@
                   <img src="img/item-1.jpg" width="360" height="380"
                     alt="Телескопическая селфи-палка со стандартным крепежом">
                   <div class="hover-links-wrapper">
-                    <button class="button add-cart"><span>В корзину</span></button>
+                    <button class="button add-cart"><span class="btn-text">В корзину</span></button>
                     <button class="add-compare-button">Добавить к сравнению</button>
                   </div>
                 </div>
                 <div class="card-name-wrapper">
                   <h3>
-                    <a href="">Любительская селфи-палка</a>
+                    <a href="">Любительская селфи&#8209;палка</a>
                   </h3>
                   <p class="price">
                     500 руб.
@@ -233,7 +240,7 @@
                   <img src="img/item-2.jpg" width="360" height="380"
                     alt="Телескопическая селфи-палка с усиленным крепежом и стабилизатором">
                   <div class="hover-links-wrapper">
-                    <button class="button"><span>В корзину</span></button>
+                    <button class="button"><span class="btn-text">В корзину</span></button>
                     <button class="add-compare-button">Добавить к сравнению</button>
                   </div>
                 </div>
@@ -251,13 +258,13 @@
                   <img src="img/item-3.jpg" width="360" height="380"
                     alt="Селфи-палка в специальном водоизоляционном корпусе">
                   <div class="hover-links-wrapper">
-                    <button class="button">В корзину</button>
+                    <button class="button"><span class="btn-text">В корзину</span></button>
                     <button class="add-compare-button">Добавить к сравнению</button>
                   </div>
                 </div>
                 <div class="card-name-wrapper">
                   <h3>
-                    <a href="">Непотопляемая селфи-палка</a>
+                    <a href="">Непотопляемая селфи&#8209;палка</a>
                   </h3>
                   <p class="price">
                     2 500 руб.
@@ -268,13 +275,13 @@
                 <div class="image-card-wrapper">
                   <img src="img/item-4.jpg" width="360" height="380" alt="Селфи-палка в виде руки">
                   <div class="hover-links-wrapper">
-                    <button class="button"><span>В корзину</span></button>
+                    <button class="button"><span class="btn-text">В корзину</span></button>
                     <button class="add-compare-button">Добавить к сравнению</button>
                   </div>
                 </div>
                 <div class="card-name-wrapper">
                   <h3>
-                    <a href="">Селфи-палка "Следуй за мной"</a>
+                    <a href="">Селфи&#8209;палка "Следуй за мной"</a>
                   </h3>
                   <p class="price">
                     4 900 руб.
