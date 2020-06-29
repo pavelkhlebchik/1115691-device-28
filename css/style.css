@@ -564,7 +564,7 @@ a:not(.active) {
   width: 200px;
 }
 
-.delivery,
+.warranty,
 .credit {
   display: none;
 }
@@ -728,7 +728,7 @@ a:not(.active) {
 
 .footer-user-navigation-list a {
   color: rgba(255, 255, 255, 0.7);
-  margin-left: 21px;
+  padding-left: 21px;
 }
 
 .footer-login::before {
