@@ -1,31 +1,31 @@
 @font-face {
-  font-family:  'Gilroy';
-  src:  url('fonts/web/gilroylight.woff2') format('woff2'),
-        url('fonts/web/gilroylight.woff') format('woff');
+  font-family:  "Gilroy";
+  src:  url("fonts/web/gilroylight.woff2") format("woff2"),
+        url("fonts/web/gilroylight.woff") format("woff");
   font-weight: 300;
   font-style: normal;
 }
 
 @font-face {
-  font-family:  'Gilroy';
-  src:  url('fonts/web/gilroyextrabold.woff2') format('woff2'),
-        url('fonts/web/gilroyextrabold.woff') format('woff');
+  font-family:  "Gilroy";
+  src:  url("fonts/web/gilroyextrabold.woff2") format("woff2"),
+        url("fonts/web/gilroyextrabold.woff") format("woff");
   font-weight: 800;
   font-style: normal;
 } 
 
 @font-face {
-  font-family:  'Open sans';
-  src:  url('fonts/web/opensans.woff2') format('woff2'),
-        url('fonts/web/opensans.woff') format('woff');
+  font-family:  "Open sans";
+  src:  url("fonts/web/opensans.woff2") format("woff2"),
+        url("fonts/web/opensans.woff") format("woff");
   font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
-  font-family:  'Open sans';
-  src:  url('fonts/web/opensanslight.woff2') format('woff2'),
-        url('fonts/web/opensanslight.woff') format('woff');
+  font-family:  "Open sans";
+  src:  url("fonts/web/opensanslight.woff2") format("woff2"),
+        url("fonts/web/opensanslight.woff") format("woff");
   font-weight: 300;
   font-style: normal;
 }
@@ -69,7 +69,7 @@ html {
   padding: 0;
   min-width:  1440px;
   color: var(--basic-black);
-  font-family: 'Open sans';
+  font-family: "Open sans";
   font-size: 16px;
   font-weight: 300;
   line-height: 28px;
@@ -86,7 +86,11 @@ a:not(.active) {
 }
 
 .visually-hidden  {
-  display: none;
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
 }
 /* Navigation */
 .header{
@@ -133,7 +137,7 @@ a:not(.active) {
 .user-navigation-list,
 .main-catalog-list {
   color:  var(--basic-black);
-  font-family:  'Open sans';
+  font-family:  "Open sans";
   font-size: 15px;
   font-weight:  300;
   list-style: none;
@@ -167,11 +171,8 @@ a:not(.active) {
 
 .user-navigation-login {
   flex-grow: 1;
-  position: relative;
-}
-
-.user-navigation-login a {
   padding-left: 24px;
+  position: relative;
 }
 
 .user-navigation-login a::before {
@@ -187,7 +188,7 @@ a:not(.active) {
 }
 
 .user-navigation-logout {
-  padding-left: 20px;
+  padding-left: 16px;
   opacity: 0.3;
 }
 
@@ -238,7 +239,7 @@ a:not(.active) {
   margin: 0;
   padding: 0;
   color:  var(--basic-black);
-  font-family:  'Gilroy';
+  font-family:  "Gilroy";
   font-weight:  800;
   font-size:  18px;
   line-height:  22px;
@@ -291,7 +292,7 @@ a:not(.active) {
 
 .main-navigation-item:first-child::before {
   content: " ";
-  background-image: url('../img/plus.svg');
+  background-image: url("../img/plus.svg");
   background-size: contain;
   opacity: 0.3;
   
@@ -346,54 +347,112 @@ a:not(.active) {
 
 /* slider for special offers */
 .special-offers {
-  margin-bottom: 61px;
+  margin-bottom: 83px;
 }
 
 .slide-wrapper {
-  margin-right: 37px;
-
+  justify-self: center;
+  align-self: center;
 }
 
-.special-offers-item{
+.special-offers-item {
   display: grid;
   grid-template-columns: 600px 1fr;
   margin-top: -129px;
-  justify-items: center;
+  position: relative;
 }
 
 .special-offers-item h3 {
-  font-family: 'Gilroy';
+  font-family: "Gilroy";
   font-weight: 800;
   font-size: 47px;
   line-height: 58px;
   margin: 0;
-  margin-top: 90px;
-  margin-bottom: 30px;
+  margin-top: 93px;
+  margin-bottom: 26px;
+}
+
+.special-offers-item h3::before {
+  content: " ";
+  position: absolute;
+  top: 34px;
+  height: 7px;
+  width: 100px;
+  background-color: var(--basic-white);
+}
+
+.item-1 h3::after {
+  content: "01";
+  color: var(--basic-white);
+  font-weight: 800;
+  font-size: 179px;
+  line-height: 219px;
+  right: 47px;
+  top: -19px;
+  position: absolute;
+}
+
+.item-2 h3::after {
+  content: "02";
+  color: var(--basic-white);
+  font-weight: 800;
+  font-size: 179px;
+  line-height: 219px;
+  right: 40px;
+  top: -15px;
+  position: absolute;
+}
+
+.item-3 h3::after {
+  content: "03";
+  color: var(--basic-white);
+  font-weight: 800;
+  font-size: 179px;
+  line-height: 219px;
+  right: 40px;
+  top: -15px;
+  position: absolute;
+  z-index: 0;
 }
 
 .special-offers-item p {
-  font-family: 'Open Sans';
+  font-family: "Open Sans";
   font-weight: 300;
   font-size: 15px;
   line-height: 20px;
   margin: 0;
   padding: 0;
-  margin-bottom: 60px;
 }
 
-.item-2,
-.item-3 {
+.item-3,
+.item-2 {
   display: none;
 }
 
-
-.feature td {
-  padding-right: 60px;
-  padding-top: 15px;
+.feature {
+  border-collapse: collapse;
+  border-spacing: 0;
+  padding: 0;
 }
 
-.feature tr:first-child td{
-  font-family: 'Gilroy';
+.feature-title td {
+  padding-top: 13px;
+}
+
+.feature-value td:nth-child(2),
+.feature-title td:nth-child(2) {
+  min-width: 135px
+}
+
+.feature-value td:first-child,
+.feature-value td:last-child,
+.feature-title td:first-child,
+.feature-title td:last-child{
+  min-width: 157px;
+}
+
+.feature tr:first-child{
+  font-family: "Gilroy";
   font-style: normal;
   font-weight: 300;
   font-size: 36px;
@@ -403,12 +462,14 @@ a:not(.active) {
 }
 
 .feature tr:last-child {
-  font-family: Gilroy;
+  font-family: "Gilroy";
   font-style: normal;
   font-weight: 300;
   font-size: 13px;
   line-height: 15px;
   letter-spacing: 0.1em;
+
+
 }
 
 
@@ -450,7 +511,7 @@ a:not(.active) {
 }
 
 .catalog-list-link p {
-  font-family: 'Gilroy';
+  font-family: "Gilroy";
   font-style: normal;
   font-weight: 800;
   font-size: 18px;
@@ -473,47 +534,14 @@ a:not(.active) {
 
 .service-container {
   margin-bottom: 90px;
-  padding-bottom: 125px;
-  background-image: linear-gradient(to top,#e5e5e5 94%,transparent 34%);
+  padding-bottom: 56px;
+  background-image: linear-gradient(to top,#e5e5e5 76%,transparent 34%);
 }
 
-.service-content {
+.services {
   display: flex;
-  flex-wrap: nowrap;
-}
-
-.service-description {
-  display: flex;
-  width: 100%;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.service-description-wrapper {
-  max-width: 495px;
-  margin-top: -70px;
-}
-
-.service-image-wrapper {
-  margin-top: -55px;
-}
-
-.service-description h3 {
-  font-family: 'Gilroy';
-  font-style: normal;
-  font-weight: 800;
-  font-size: 47px;
-  line-height: 58px;
-  letter-spacing: 0.2em;  
-}
-
-.service-description p {
-  font-family: 'Open Sans';
-  font-style: normal;
-  font-weight: 300;
-  font-size: 15px;
-  line-height: 28px;
-  letter-spacing: 0.1em;
+  min-height: 320px;
+  margin-top: -71px;
 }
 
 .service-list {
@@ -523,7 +551,6 @@ a:not(.active) {
   justify-content: center;
   min-width: 284px;
   margin: 0;
-  margin-right: 116px;
   padding: 0;
   list-style: none;
   font-family: Gilroy;
@@ -544,7 +571,7 @@ a:not(.active) {
   position: absolute;
   display: flex;
   left: 277px;
-  top: -79px;
+  top: -12px;
 }
 
 .service-item {
@@ -575,10 +602,60 @@ a:not(.active) {
   width: 200px;
 }
 
-.warranty,
-.credit {
+.service-description { 
+  margin-left: 116px;
+  width: 460px;
+  position: relative;
   display: none;
 }
+
+.service-description h3 {
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 47px;
+  line-height: 58px;
+  letter-spacing: 0.2em;
+  margin-top: 59px;
+  margin-bottom: 40px;  
+}
+
+.service-description p {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 28px;
+  letter-spacing: 0.1em;
+}
+
+.service-content article::after {
+  content: "";
+  position: absolute;
+  top: -78px;
+  left: 559px;
+  width: 260px;
+  height: 320px;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}  
+
+.delivery-service::after {
+  background-image: url(../img/delivery.svg);
+}
+
+.warranty-service::after {
+  background-image: url(../img/warranty.svg);
+}
+
+.credit-service::after {
+  background-image: url(../img/credit.svg);
+}
+
+.service-shown {
+  display: block;
+}
+
 
 /* partners */
 
@@ -615,7 +692,7 @@ a:not(.active) {
 }
 
 .index-columns h2 {
-  font-family: 'Gilroy';
+  font-family: "Gilroy";
   font-weight: 800;
   font-size: 47px;
   line-height: 58px;
@@ -624,7 +701,7 @@ a:not(.active) {
 }
 
 .index-columns p {
-  font-family: 'Open Sans';
+  font-family: "Open Sans";
   font-style: normal;
   font-weight: 300;
   font-size: 15px;
@@ -649,7 +726,7 @@ a:not(.active) {
 }
 
 .about li {
-  font-family: 'Gilroy';
+  font-family: "Gilroy";
   font-size: 16px;
   font-weight: 800;
   line-height: 28px;
@@ -709,7 +786,7 @@ a:not(.active) {
 }
 
 .footer-user-navigation-list {
-  font-family: 'Open Sans';
+  font-family: "Open Sans";
   font-style: normal;
   font-weight: 300;
   font-size: 15px;
@@ -744,7 +821,7 @@ a:not(.active) {
 
 .footer p {
   margin: 0;
-  font-family: 'Open Sans';
+  font-family: "Open Sans";
   font-style: normal;
   font-weight: 300;
   font-size: 15px;
@@ -832,7 +909,7 @@ a:not(.active) {
 
 .footer-navigation-list {
   color: var(--basic-white);
-  font-family:  'Gilroy';
+  font-family:  "Gilroy";
   font-weight:  800;
   font-size:  18px;
   letter-spacing: 0.2em;
@@ -907,7 +984,7 @@ a:not(.active) {
   border: none;
   color: var(--basic-black);
   cursor: pointer;
-  font-family: 'Gilroy';
+  font-family: "Gilroy";
   font-style: normal;
   font-weight: 800;
   font-size: 18px;
@@ -941,7 +1018,7 @@ a:not(.active) {
 }
 
 .search-button {
-  font-family: 'Open Sans';
+  font-family: "Open Sans";
   font-style: normal;
   font-weight: 300;
   font-size: 15px;
@@ -989,7 +1066,7 @@ a:not(.active) {
   position: absolute;
   left: 210px;
   top: 2px;
-  background-image: url('../img/plus.svg');
+  background-image: url("../img/plus.svg");
   width: 15px;
   height: 15px;
   background-size: contain;
@@ -1008,8 +1085,10 @@ a:not(.active) {
 }
 
 .special-offers .button {
-  width: 220px;
-  margin-bottom: 60px
+  width: 215px;
+  margin-top: 51px;
+  margin-bottom: 51px;
+  padding-left: 5px;
 }
 
 .special-offers .button:hover {
@@ -1086,7 +1165,7 @@ a:not(.active) {
   flex-wrap: wrap;
   flex-grow: 1;
   justify-content: space-between;
-  font-family: 'Gilroy';
+  font-family: "Gilroy";
   font-style: normal;
   font-weight: 800;
   font-size: 18px;
@@ -1146,7 +1225,7 @@ a:not(.active) {
 
 .write-us-item input,
 .write-us-item textarea {
-  font-family: 'Gilroy';
+  font-family: "Gilroy";
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
@@ -1212,7 +1291,7 @@ a:not(.active) {
   min-height: 523px;
   z-index: 1;
   display: none;
-  box-shadow: 1px 1px 1px rgba(0,0,0,0.5);
+  box-shadow: 5px 5px 5px rgba(0,0,0,0.5);
 }
 
 .map-popup .close-modal-btn {
@@ -1225,7 +1304,7 @@ a:not(.active) {
 /* catalog */
 
 main h1 {
-  font-family: 'Gilroy';
+  font-family: "Gilroy";
   font-style: normal;
   font-weight: 800;
   font-size: 47px;
@@ -1274,21 +1353,24 @@ main h1 {
   cursor: default;
 }
 
-
-.breadcrumbs-item:nth-child(2) {
-  margin-left: 20px;
+.breadcrumbs-item {
+  position: relative;
 }
 
-.breadcrumbs-item:nth-child(2) img {
-  margin-left: 20px;
-}
+.breadcrumbs-item:not(:last-child) a::after {
+  content: " ";
+  background-image: url("../img/nav-arrow.svg");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  width: 4px;
+  height: 8px;
+  position: absolute;
+  top: 6px;
+  right: -20px;
+}  
 
-.breadcrumbs-item:first-child img{
-  margin-left: 16px;
-}
-
-.breadcrumbs-item:last-child {
-  margin-left: 16px;
+.breadcrumbs-item:not(:last-child) {
+  margin-right: 40px;
 }
 
 /* catalog page */
@@ -1303,7 +1385,7 @@ main h1 {
 }
 
 .catalog-header h3 {
-  font-family: 'Gilroy';
+  font-family: "Gilroy";
   font-style: normal;
   font-weight: 800;
   font-size: 16px;
@@ -1329,8 +1411,8 @@ main h1 {
 }
 
 .sorting h3 {
-  margin-left: 45px;
-  margin-right: 74px;
+  margin-left: 48px;
+  margin-right: 73px;
 }
 
 .sorting-list {
@@ -1355,7 +1437,7 @@ main h1 {
   padding: 0;
 }
 
-.sorting-level-item:first-child {
+.sorting-level-list .level-up {
   margin-right: 23px;
 }
 
@@ -1364,12 +1446,40 @@ main h1 {
 }
 
 .sorting-list a {
-  font-family: 'Open Sans';
+  font-family: "Open Sans";
   font-weight: normal;
   font-size: 14px;
   line-height: 19px;
   opacity: 0.3;
   color: var(--basic-black);
+}
+
+.sorting-level-item {
+  position: relative;
+}
+
+.level-up a::before {
+  content: " ";
+  background-image: url("../img/icon-up-dir.svg");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  width: 10px;
+  height: 11px;
+  position: absolute;
+  top: -6px;
+  left: -25px;
+}
+
+.level-down a::before {
+  content: " ";
+  background-image: url("../img/icon-down-dir.svg");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  width: 11px;
+  height: 11px;
+  position: absolute;
+  top: -6px;
+  left: -15px;
 }
 
 .sorting-list a:hover:not(.current-sorting-item) {
@@ -1381,7 +1491,7 @@ main h1 {
 }
 
 .sorting-list .current-sorting-item {
-  font-family: 'Open Sans';
+  font-family: "Open Sans";
   font-weight: normal;
   font-size: 14px;
   line-height: 19px;
@@ -1407,7 +1517,8 @@ main h1 {
 /* catalog content */
 
 .catalog-wrapper {
-  padding-top: 60px;
+  padding-top: 70px;
+  padding-bottom: 78px;
   background-image: linear-gradient(to right, var(--basic-gray-light) 37%, transparent 34%);
   z-index: 0;
 }
@@ -1423,20 +1534,22 @@ main h1 {
 .filter {
   z-index: 1;
   margin-left: 45px;
-  /* position: relative; */
+  position: relative;
 }
 
 .filter legend {
-  font-family: 'Gilroy';
+  font-family: "Gilroy";
   font-style: normal;
   font-weight: 800;
   font-size: 14px;
   line-height: 17px;
   letter-spacing: 0.1em;
+  padding-left: 1px;
 }
 
 .filter fieldset {
   border: none;
+  margin-bottom: 69px;
 }
 
 .filter legend::before {
@@ -1449,17 +1562,22 @@ main h1 {
 }
 
 .filter label {
-  font-family: 'Open Sans';
+  font-family: "Open Sans";
   font-style: normal;
   font-weight: 300;
   font-size: 14px;
   line-height: 19px;
-  padding-left: 45px;
+  padding-left: 46px;
 }
 
 .filter ul {
   list-style: none;
   padding: 0;
+  
+}
+
+.filter-input li {
+  margin-bottom: 1px;
 }
 
 .filter button {
@@ -1481,17 +1599,17 @@ main h1 {
   position: absolute;
   height: 24px;
   width: 24px;
-  background-image: url('../img/checkbox-off.svg');
+  background-image: url("../img/checkbox-off.svg");
   background-repeat: no-repeat;
   background-size: contain;
-  margin-left: -45px;
+  margin-left: -46px;
 }
 
 
 /* checked */
 
 .filter-input-checkbox:checked {
-  background-image: url('../img/checkbox-on.svg');
+  background-image: url("../img/checkbox-on.svg");
   background-repeat: no-repeat;
   background-size: contain;
 }
@@ -1502,15 +1620,15 @@ main h1 {
   position: absolute;
   height: 24px;
   width: 24px;
-  background-image: url('../img/radio-off.svg');
+  background-image: url("../img/radio-off.svg");
   background-repeat: no-repeat;
   background-size: contain;
-  margin-left: -45px;
+  margin-left: -46px;
 }
   /* checked */
 
 .filter-input-radio:checked {
-  background-image: url('../img/radio-on.svg');
+  background-image: url("../img/radio-on.svg");
   background-repeat: no-repeat;
   background-size: contain;
   }
@@ -1549,6 +1667,10 @@ main h1 {
 
 /* product-cards */
 
+.product-cards {
+  margin-bottom: 12px;
+}
+
 .product-card-wrapper {
   display: flex;
   flex-wrap: wrap;
@@ -1559,16 +1681,15 @@ main h1 {
 .product-card-list {
   display: grid;
   grid-template-columns: 361px 361px;
-  column-gap: 40px;
+  column-gap: 39px;
+  row-gap: 21px;
   list-style: none;
   margin: 0;
-  margin-bottom: 40px;
   padding: 0;
 }
 
 .product-card-item {
   margin: 0;
-  margin-bottom: 40px;  
   padding: 0;
   width: 361px;
 }
@@ -1599,7 +1720,7 @@ main h1 {
   background-color: transparent;
   border: none;
   cursor: pointer;
-  font-family: 'Open Sans';
+  font-family: "Open Sans";
   font-style: normal;
   font-weight: 300;
   font-size: 13px;
@@ -1625,7 +1746,7 @@ main h1 {
 }
 
 .product-card-list a {
-  font-family: 'Gilroy';
+  font-family: "Gilroy";
   font-style: normal;
   font-weight: 800;
   font-size: 18px;
@@ -1641,7 +1762,7 @@ main h1 {
 }
 
 .price {
-  font-family: 'Gilroy';
+  font-family: "Gilroy";
   font-style: normal;
   font-weight: 300;
   font-size: 16px;
@@ -1659,13 +1780,12 @@ main h1 {
   background-color: var(--paginator-color);
   list-style: none;
   margin: 0;
-  margin-bottom: 78px;
   padding: 0;
   display: flex;
-  min-width: 760px;
+  max-width: 760px;
 }
 .paginator a {
-  font-family: 'Gilroy';
+  font-family: "Gilroy";
   font-style: normal;
   font-weight: 800;
   font-size: 16px;
@@ -1676,29 +1796,29 @@ main h1 {
 }
 
 .prev {
-  padding-top: 25px;
-  padding-bottom: 25px;
+  padding-top: 21px;
+  padding-bottom: 21px;
   padding-left: 30px;
   padding-right: 30px;
   margin-right: auto;
 }
 
 .next {
-  padding-top: 25px;
-  padding-bottom: 25px;
+  padding-top: 21px;
+  padding-bottom: 21px;
   padding-left: 30px;
-  padding-right: 30px;
+  padding-right: 29px;
   margin-left: auto;
 }
 
 .page-item {
-  margin-top: 25px;
-  margin-bottom: 25px;
+  margin-top: 21px;
+  margin-bottom: 21px;
 }
 
 .page-number {
-  margin-right: 15px;
-  margin-left: 15px;
+  margin-right: 11px;
+  margin-left: 18px;
 }
 
 .next:hover,
@@ -1721,4 +1841,8 @@ main h1 {
 
 .page-number:active:not(.current-page) {
   opacity: 1;
+}
+
+iframe {
+  border: 0;
 }
