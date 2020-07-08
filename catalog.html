@@ -160,9 +160,25 @@
     <div class="catalog-wrapper">
       <div class="container catalog-content">
         <form class="filter" action="https://echo.htmlacademy.ru" method="post">
-          <fieldset>
+          <fieldset class="filter-item">
             <legend>Стоимость</legend>
-            <input type="range">
+            <div class="range-filter">
+              <div class="range-controls">
+                <div class="scale">
+                  <div class="bar"></div>
+                </div>
+                <div class="toggle toggle-min" tabindex="0"></div>
+                <div class="toggle toggle-max" tabindex="0"></div>
+              </div>
+              <div class="price-controls">
+                <label class="min-price">
+                  от <input type="number" name="min-price" value="0">
+                </label>
+                <label class="max-price">
+                  до <input type="number" name="max-price" value="5000">
+                </label>
+              </div>
+            </div>
           </fieldset>
           <fieldset>
             <legend>Цвет</legend>
@@ -272,7 +288,7 @@
                 </div>
               </li>
               <li class="product-card-item">
-                <div class="image-card-wrapper">
+                <div class="image-card-wrapper new-item">
                   <img src="img/item-4.jpg" width="360" height="380" alt="Селфи-палка в виде руки">
                   <div class="hover-links-wrapper">
                     <button class="button"><span class="btn-text">В корзину</span></button>
