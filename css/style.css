@@ -347,7 +347,9 @@ a:not(.active) {
 
 /* slider for special offers */
 .special-offers {
-  margin-bottom: 83px;
+  margin-bottom: 249px;
+  height: 356px;
+  position: relative;
 }
 
 .slide-wrapper {
@@ -355,11 +357,42 @@ a:not(.active) {
   align-self: center;
 }
 
+
 .special-offers-item {
-  display: grid;
+  display: none;
   grid-template-columns: 600px 1fr;
   margin-top: -129px;
   position: relative;
+}
+
+.special-offers-item-current {
+  display: grid;
+}
+
+.slider-controls {
+  position: absolute;
+  bottom: 4px;
+  right: 88px;
+  display: flex;
+  width: 72px;
+  justify-content: space-between;
+}
+
+.slider-controls button {
+  padding: 0;
+  width: 12px;
+  height: 12px;
+  background-color: transparent;
+  border: 1px solid var(--basic-black);
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.current-slide {
+  background-image: url("../img/ellipse2.svg");
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  cursor: default;
 }
 
 .special-offers-item h3 {
@@ -381,6 +414,20 @@ a:not(.active) {
   background-color: var(--basic-white);
 }
 
+.item-1 .slide-wrapper {
+  margin-right: 38px;
+}
+
+.item-2 .slide-wrapper {
+  margin-top: 26px;
+  margin-right: 22px;
+}
+
+.item-3 .slide-wrapper {
+  margin-top: 17px;
+  margin-right: 13px;
+}
+
 .item-1 h3::after {
   content: "01";
   color: var(--basic-white);
@@ -398,8 +445,8 @@ a:not(.active) {
   font-weight: 800;
   font-size: 179px;
   line-height: 219px;
-  right: 40px;
-  top: -15px;
+  right: 54px;
+  top: -18px;
   position: absolute;
 }
 
@@ -409,8 +456,8 @@ a:not(.active) {
   font-weight: 800;
   font-size: 179px;
   line-height: 219px;
-  right: 40px;
-  top: -15px;
+  right: 52px;
+  top: -18px;
   position: absolute;
   z-index: 0;
 }
@@ -422,11 +469,6 @@ a:not(.active) {
   line-height: 20px;
   margin: 0;
   padding: 0;
-}
-
-.item-1,
-.item-2 {
-  display: none;
 }
 
 .feature {
@@ -541,7 +583,7 @@ a:not(.active) {
 .services {
   display: flex;
   min-height: 320px;
-  margin-top: -71px;
+  margin-top: -70px;
 }
 
 .service-list {
@@ -585,7 +627,7 @@ a:not(.active) {
   background-color: var(--basic-black);
 }
 
-.current-service-button {
+.service-item .current-service-button {
   font: inherit;
   text-transform: inherit;
   color: var(--special-yellow);
@@ -604,7 +646,7 @@ a:not(.active) {
 
 .service-description { 
   margin-left: 116px;
-  width: 460px;
+  width: 571px;
   position: relative;
   display: none;
 }
@@ -630,7 +672,7 @@ a:not(.active) {
 }
 
 .service-content article::after {
-  content: "";
+  content: " ";
   position: absolute;
   top: -78px;
   left: 559px;
@@ -640,16 +682,26 @@ a:not(.active) {
   background-position: 50% 50%;
 }  
 
+.service-content .credit-service::after {
+  top: -89px;
+  left: 544px;
+}
+
+.service-content .credit-service::after {
+  top: -81px;
+  left: 560px;
+}
+
 .delivery-service::after {
-  background-image: url(../img/delivery.svg);
+  background-image: url("../img/delivery.svg");
 }
 
 .warranty-service::after {
-  background-image: url(../img/warranty.svg);
+  background-image: url("../img/warranty.svg");
 }
 
 .credit-service::after {
-  background-image: url(../img/credit.svg);
+  background-image: url("../img/credit.svg");
 }
 
 .service-shown {

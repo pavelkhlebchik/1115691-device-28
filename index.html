@@ -111,7 +111,7 @@
     <h1 class="visually-hidden">Интернет магазин гаджетов "Device"</h1>
     <section class="special-offers container">
       <h2 class="visually-hidden">Лучшие предложения</h2>
-      <article class="special-offers-item slider-slides item-1">
+      <article class="special-offers-item item-1 special-offers-item-current">
         <div class="slide-wrapper">
           <img src="img/slider-1.png" width="384" height="486" alt="Мега-крутая селфи-палка">
         </div>
@@ -138,13 +138,13 @@
           </table>
         </div>
       </article>
-      <article class="special-offers-item slider-slides item-2">
+      <article class="special-offers-item item-2">
         <div class="slide-wrapper">
           <img src="img/slider-2.png" width="345" height="485" alt="Фитнес браслет">
         </div>
         <div class="description-slide-wrapper">
-          <h3>Худеем правильно!</h3>
-          <p>Мотивирующие фитнес-браслеты помогут найти в себе силы
+          <h3>Худеем<br /> правильно!</h3>
+          <p>Мотивирующие фитнес-браслеты помогут найти в себе силы<br />
             не пропускать занятия и соблюдать диету.
           </p>
           <a class="button" href="">
@@ -160,13 +160,13 @@
           </table>
         </div>
       </article>
-      <article class="special-offers-item slider-slides item-3">
+      <article class="special-offers-item item-3">
         <div class="slide-wrapper">
           <img src="img/slider-3.png" width="526" height="334" alt="Квадрокоптер">
         </div>
         <div class="description-slide-wrapper">
           <h3>Порхает как бабочка, жалит как пчела!</h3>
-          <p>Этот обычный, на первый взгляд, квадрокоптер оснащен
+          <p>Этот обычный, на первый взгляд, квадрокоптер оснащен <br />
             мощным лазером, замаскированным под стандартную камеру.
           </p>
           <a class="button" href="">
@@ -184,13 +184,10 @@
           </table>
         </div>
       </article>
-      <input type="radio" class="custom-radio" id="btn-1" name="toggle">
-      <input type="radio" class="custom-radio" id="btn-2" name="toggle">
-      <input type="radio" class="custom-radio" id="btn-3" name="toggle">
       <div class="slider-controls">
-        <label for="btn-1"></label>
-        <label for="btn-2"></label>
-        <label for="btn-3"></label>
+        <button class="current-slide" type="button" aria-label="Первый слайд"></button>
+        <button type="button" aria-label="Второй слайд"></button>
+        <button type="button" aria-label="Третий слайд"></button>
       </div>
     </section>
     <section class="catalog-list-container container">
@@ -209,7 +206,7 @@
             <div class="catalog-image">
               <img src="img/popular-2.svg" width="86" height="117" alt="Моноподы для селфи-палок">
             </div>
-            <p>Моноподы для селфи</p>
+            <p>Моноподы <br /> для селфи</p>
           </a>
         </li>
         <li class="catalog-item">
@@ -251,7 +248,7 @@
       <div class="container services">
         <ul class="service-list">
           <li class="service-item current-service-item">
-            <button class="current-service-button">
+            <button class="button   current-service-button">
               <span>Доставка</span>
             </button>
           </li>
@@ -267,22 +264,24 @@
           </li>
         </ul>
         <div class="service-content">
-          <article class="service-description delivery-service service-shown">
+          <article class="service-description delivery-service  service-shown">
             <h3>Доставка</h3>
             <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно!
-              Ведь мы неплохо заработаем, поднимая его на ваш этаж
+              Ведь мы неплохо<br />
+              заработаем, поднимая его на ваш этаж
             </p>
           </article>
-          <article class="service-description warranty">
-            <h3>Гарантии</h3>
-            <p>Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый.
+          <article class="service-description warranty-service">
+            <h3>Гарантия</h3>
+            <p>Если из-за возгорания купленного у нас товара у вас сгорит дом — 
+              не переживайте, мы выдадим вам новый.<br />
               Товар, не дом, конечно же
             </p>
           </article>
-          <article class="service-description credit">
+          <article class="service-description credit-service">
             <h3>Кредит</h3>
             <p>Залезть в долговую яму стало проще! Кредитные консультанты
-              подберут для вас наиболее выгодные
+              подберут для вас наиболее выгодные<br />
               условия кредита. Выгодные для нашего банка, разумеется.
             </p>
           </article>
@@ -361,9 +360,8 @@
       </button>
     </form>
     <button class="close-modal-btn">
-      <img src="img/modal-close.svg" width="55" height="55"
-        alt="Закрыть форму обратной связи">
-      </button>
+      <img src="img/modal-close.svg" width="55" height="55" alt="Закрыть форму обратной связи">
+    </button>
   </section>
   <section class="map-popup">
     <h2 class="visually-hidden">
