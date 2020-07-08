@@ -646,10 +646,15 @@ a:not(.active) {
   background-color: transparent;
   border: none;
   width: 160px;
+  cursor: default;
 }
 
 .current-service-button span {
   width: 200px;
+}
+
+.service-item .current-service-button:hover {
+  background-color: var(--basic-black);
 }
 
 .service-description { 
