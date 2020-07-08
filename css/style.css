@@ -395,6 +395,10 @@ a:not(.active) {
   cursor: default;
 }
 
+.description-slide-wrapper {
+  z-index: 0;
+}
+
 .special-offers-item h3 {
   font-family: "Gilroy";
   font-weight: 800;
@@ -403,6 +407,7 @@ a:not(.active) {
   margin: 0;
   margin-top: 93px;
   margin-bottom: 26px;
+  z-index: 1;
 }
 
 .special-offers-item h3::before {
@@ -413,6 +418,7 @@ a:not(.active) {
   width: 100px;
   background-color: var(--basic-white);
 }
+
 
 .item-1 .slide-wrapper {
   margin-right: 38px;
@@ -437,6 +443,7 @@ a:not(.active) {
   right: 47px;
   top: -19px;
   position: absolute;
+  z-index: -1;
 }
 
 .item-2 h3::after {
@@ -448,6 +455,7 @@ a:not(.active) {
   right: 54px;
   top: -18px;
   position: absolute;
+  z-index: -1;
 }
 
 .item-3 h3::after {
@@ -459,7 +467,7 @@ a:not(.active) {
   right: 52px;
   top: -18px;
   position: absolute;
-  z-index: 0;
+  z-index: -1;
 }
 
 .special-offers-item p {
