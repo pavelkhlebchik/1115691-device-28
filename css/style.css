@@ -1,31 +1,31 @@
 @font-face {
   font-family:  "Gilroy";
-  src:  url("fonts/web/gilroylight.woff2") format("woff2"),
-        url("fonts/web/gilroylight.woff") format("woff");
+  src:  url("fonts/gilroylight.woff2") format("woff2"),
+        url("fonts/gilroylight.woff") format("woff");
   font-weight: 300;
   font-style: normal;
 }
 
 @font-face {
   font-family:  "Gilroy";
-  src:  url("fonts/web/gilroyextrabold.woff2") format("woff2"),
-        url("fonts/web/gilroyextrabold.woff") format("woff");
+  src:  url("fonts/gilroyextrabold.woff2") format("woff2"),
+        url("fonts/gilroyextrabold.woff") format("woff");
   font-weight: 800;
   font-style: normal;
 } 
 
 @font-face {
   font-family:  "Open sans";
-  src:  url("fonts/web/opensans.woff2") format("woff2"),
-        url("fonts/web/opensans.woff") format("woff");
+  src:  url("fonts/opensans.woff2") format("woff2"),
+        url("fonts/opensans.woff") format("woff");
   font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
   font-family:  "Open sans";
-  src:  url("fonts/web/opensanslight.woff2") format("woff2"),
-        url("fonts/web/opensanslight.woff") format("woff");
+  src:  url("fonts/opensanslight.woff2") format("woff2"),
+        url("fonts/opensanslight.woff") format("woff");
   font-weight: 300;
   font-style: normal;
 }
@@ -967,6 +967,10 @@ a:not(.active) {
   margin-bottom: 67px;
 }
 
+.tel-link {
+  color: var(--basic-white);
+}
+
 .footer-navigation-list {
   color: var(--basic-white);
   font-family:  "Gilroy";
@@ -977,7 +981,7 @@ a:not(.active) {
   list-style: none;
   text-transform: uppercase;
   margin: 0;
-  margin-right: 37px;
+  margin-right: 36px;
   padding: 0;
   display: flex;
   width: 423px;
@@ -1040,7 +1044,7 @@ a:not(.active) {
 /* Buttons decorative*/
 
 .button {
-  display: inline-block;
+  display: block;
   border: none;
   color: var(--basic-black);
   cursor: pointer;
