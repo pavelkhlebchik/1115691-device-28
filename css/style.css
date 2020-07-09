@@ -1449,16 +1449,30 @@ main h1 {
 }
 
 .catalog-header {
-  background-image: linear-gradient(to right,#dcdcdc 37%,#e5e5e5 34%);
+  /* background-image: linear-gradient(to right,#dcdcdc 37%,#e5e5e5 34%); */
+  background-image: linear-gradient(to right,#dcdcdc 0,#dcdcdc 28%,#ebebeb 28%,#ebebeb 100%);
   height: 70px;
   display: flex;
   align-items: center;
 }
 
-/* .catalog-header::after {
+/* .filter-title::after {
   content: " ";
   background-color: #dcdcdc;
-  width: calc(100vw - 1415px + 200px);
+  background-image: linear-gradient(to right,#dcdcdc 37%,#e5e5e5 34%);
+  width: calc(100vw - 853px);
+  height: 70px;
+  position: absolute;
+  z-index: -2;
+  top: 0px;
+  left: 0px;
+} */
+/* 
+.sorting::after {
+  content: " ";
+  background-color: #e5e5e5;
+  background-image: linear-gradient(to right,#dcdcdc 37%,#e5e5e5 34%);
+  width: calc(100vw - 853px);
   height: 70px;
   position: absolute;
   z-index: -1;
@@ -1482,8 +1496,11 @@ main h1 {
 
 .filter-title {
   width: 200px;
-  margin-left: 60px;
-  margin-right: 150px;
+  background-color: #dcdcdc;
+  padding-top: 9px;
+  padding-bottom: 9px;
+  padding-left: 60px;
+  padding-right: 125px;
 }
 
 .sorting { 
@@ -1494,7 +1511,7 @@ main h1 {
 }
 
 .sorting h3 {
-  margin-left: 48px;
+  margin-left: 72px;
   margin-right: 73px;
 }
 
@@ -1600,9 +1617,8 @@ main h1 {
 /* catalog content */
 
 .catalog-card-wrapper {
-  padding-top: 70px;
   padding-bottom: 78px;
-  background-image: linear-gradient(to right, var(--basic-gray-light) 37%, transparent 34%);
+  background-image: linear-gradient(to right,var(--basic-gray-light) 0, var(--basic-gray-light) 28%, var(--basic-white) 28%, var(--basic-white) 100%);
   z-index: 0;
 }
 
@@ -1618,6 +1634,10 @@ main h1 {
   z-index: 1;
   margin-left: 45px;
   position: relative;
+  background-color: #e5e5e5;
+  padding-top: 70px;
+  width: 283px;
+  height: calc(100% + 8px);
 }
 
 .filter legend {
@@ -1742,6 +1762,7 @@ main h1 {
 .filter button {
   width: 200px;
   margin-left: 15px;
+  z-index: -1;
 }
 
 /* checkbox */
@@ -1827,11 +1848,12 @@ main h1 {
   margin-bottom: 24px;
 }
 
-.product-card-wrapper {
+.product-cards-wrapper {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
   width: 100%;
+  margin-top: 70px;
 }
 
 .product-card-list {
