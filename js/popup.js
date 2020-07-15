@@ -8,9 +8,11 @@ var commentField = modalPopup.querySelector(".comment-field");
 
 var isStorageSupport = true;
 var storageName = "";
+var storageEmail = "";
 
 try {
   storageName = localStorage.getItem("name");
+  storageEmail = localStorage.getItem("email");
 } catch (err) {
   isStorageSupport = false;
 }
@@ -24,6 +26,12 @@ openForm.addEventListener("click", function (evt) {
     emailField.focus();
   } else {
     nameField.focus();
+  }
+  if (storageEmail) {
+    emailField.value = storageEmail;
+    commentField.focus();
+  } else {
+    emailField.focus();
   }
 });
 
@@ -39,9 +47,9 @@ writeUsForm.addEventListener("submit", function (evt) {
     modalPopup.classList.remove("popup-error");
     modalPopup.offsetWidth = modalPopup.offsetWidth;
     modalPopup.classList.add("popup-error");
-
   } else {
     localStorage.setItem("name", nameField.value);
+    localStorage.setItem("email", emailField.value);
   }
 });
 
