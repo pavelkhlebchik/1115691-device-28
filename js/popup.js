@@ -35,6 +35,7 @@ openForm.addEventListener("click", function (evt) {
   }
 });
 
+
 closePopup.addEventListener("click", function (evt) {
   evt.preventDefault();
   modalPopup.classList.remove("popup-show");
